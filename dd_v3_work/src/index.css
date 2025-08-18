@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0B0F10;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.card {
+  @apply bg-card/80 backdrop-blur-md rounded-2xl p-5 shadow-lg;
+}
+
+.btn {
+  @apply px-4 py-3 rounded-xl font-semibold transition active:scale-95;
+}
+.btn-primary {
+  @apply bg-white text-black hover:bg-white/90;
+}
+.chip {
+  @apply px-4 py-3 rounded-xl bg-white/10 border border-white/10 hover:bg-white/15 transition text-sm;
+}
+.chip-selected {
+  @apply bg-white text-black;
+}
+
+
+/* Category gradients for Results card */
+.grad-whiskey { background: linear-gradient(135deg, #8a4b14, #c87b2f); }
+.grad-bourbon { background: linear-gradient(135deg, #a15818, #e2a55b); }
+.grad-scotch  { background: linear-gradient(135deg, #6b512b, #b18a52); }
+.grad-vodka   { background: linear-gradient(135deg, #3a3f4b, #8a93a6); }
+.grad-gin     { background: linear-gradient(135deg, #0a6f5a, #4ec8a3); }
+.grad-rum     { background: linear-gradient(135deg, #4b2c0f, #a16d2b); }
+.grad-tequila { background: linear-gradient(135deg, #a1c935, #ffd66b); }
+.grad-mezcal  { background: linear-gradient(135deg, #2b5b3c, #84a98c); }
+.grad-liqueur { background: linear-gradient(135deg, #6a2352, #c77dff); }
+.grad-cider   { background: linear-gradient(135deg, #5fa42d, #c5e478); }
+.grad-beer    { background: linear-gradient(135deg, #c58a1e, #ffe08a); }
+
+.category-pill { @apply text-xs font-semibold bg-white/20 px-2 py-1 rounded-full; }
+.logo-chip { @apply bg-white rounded-xl p-2 shadow-lg; }
+
+.header-bar { @apply flex items-center justify-between gap-3; }
+.header-left { @apply flex items-center gap-3; }
+.brand-lockup { @apply flex items-center gap-2; }

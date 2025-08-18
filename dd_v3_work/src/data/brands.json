@@ -1,0 +1,1796 @@
+[
+  {
+    "id": "jameson",
+    "displayName": "Jameson Irish Whiskey",
+    "category": "whiskey",
+    "flavorNotes": [
+      "smooth",
+      "vanilla",
+      "light spice"
+    ],
+    "vibeTags": [
+      "social",
+      "easygoing",
+      "chill"
+    ],
+    "strength": "medium",
+    "priceTier": "mid",
+    "mixers": [
+      "ginger ale",
+      "cola",
+      "soda water",
+      "lemonade"
+    ],
+    "occasions": [
+      "house party",
+      "game night",
+      "date night"
+    ],
+    "weatherFits": [
+      "cool",
+      "any"
+    ],
+    "logo": "/logos/jameson.svg"
+  },
+  {
+    "id": "jack-daniels",
+    "displayName": "Jack Daniel's Old No. 7",
+    "category": "whiskey",
+    "flavorNotes": [
+      "caramel",
+      "oak",
+      "banana"
+    ],
+    "vibeTags": [
+      "classic",
+      "bold",
+      "casual"
+    ],
+    "strength": "medium",
+    "priceTier": "mid",
+    "mixers": [
+      "cola",
+      "ginger ale",
+      "sour mix"
+    ],
+    "occasions": [
+      "barbecue",
+      "house party",
+      "pre-game"
+    ],
+    "weatherFits": [
+      "any"
+    ],
+    "logo": "/logos/jack-daniels.svg"
+  },
+  {
+    "id": "crown-royal",
+    "displayName": "Crown Royal",
+    "category": "whiskey",
+    "flavorNotes": [
+      "vanilla",
+      "light oak",
+      "sweet"
+    ],
+    "vibeTags": [
+      "smooth",
+      "approachable",
+      "social"
+    ],
+    "strength": "medium",
+    "priceTier": "mid",
+    "mixers": [
+      "ginger ale",
+      "cola",
+      "apple juice"
+    ],
+    "occasions": [
+      "game night",
+      "house party",
+      "celebration"
+    ],
+    "weatherFits": [
+      "cool",
+      "any"
+    ],
+    "logo": "/logos/crown-royal.svg"
+  },
+  {
+    "id": "makers-mark",
+    "displayName": "Maker's Mark",
+    "category": "bourbon",
+    "flavorNotes": [
+      "caramel",
+      "vanilla",
+      "baking spice"
+    ],
+    "vibeTags": [
+      "warm",
+      "cozy",
+      "friendly"
+    ],
+    "strength": "medium",
+    "priceTier": "mid",
+    "mixers": [
+      "ginger ale",
+      "soda water",
+      "lemonade"
+    ],
+    "occasions": [
+      "date night",
+      "dinner",
+      "house party"
+    ],
+    "weatherFits": [
+      "cool",
+      "cold",
+      "any"
+    ],
+    "logo": "/logos/makers-mark.svg"
+  },
+  {
+    "id": "bulleit-bourbon",
+    "displayName": "Bulleit Bourbon",
+    "category": "bourbon",
+    "flavorNotes": [
+      "rye spice",
+      "oak",
+      "citrus"
+    ],
+    "vibeTags": [
+      "bold",
+      "adventurous",
+      "modern"
+    ],
+    "strength": "strong",
+    "priceTier": "mid",
+    "mixers": [
+      "ginger beer",
+      "cola",
+      "sour mix"
+    ],
+    "occasions": [
+      "barbecue",
+      "celebration",
+      "pre-game"
+    ],
+    "weatherFits": [
+      "cool",
+      "cold",
+      "any"
+    ],
+    "logo": "/logos/bulleit.svg"
+  },
+  {
+    "id": "woodford-reserve",
+    "displayName": "Woodford Reserve",
+    "category": "bourbon",
+    "flavorNotes": [
+      "rich oak",
+      "dark fruit",
+      "vanilla"
+    ],
+    "vibeTags": [
+      "classy",
+      "refined",
+      "sipping"
+    ],
+    "strength": "strong",
+    "priceTier": "premium",
+    "mixers": [
+      "soda water",
+      "bitters",
+      "ginger ale"
+    ],
+    "occasions": [
+      "date night",
+      "celebration"
+    ],
+    "weatherFits": [
+      "cool",
+      "cold"
+    ],
+    "logo": "/logos/woodford-reserve.svg"
+  },
+  {
+    "id": "johnnie-walker-black",
+    "displayName": "Johnnie Walker Black Label",
+    "category": "scotch",
+    "flavorNotes": [
+      "smoke",
+      "toffee",
+      "spice"
+    ],
+    "vibeTags": [
+      "classic",
+      "confident",
+      "evening"
+    ],
+    "strength": "medium",
+    "priceTier": "mid",
+    "mixers": [
+      "soda water",
+      "ginger ale"
+    ],
+    "occasions": [
+      "dinner",
+      "celebration"
+    ],
+    "weatherFits": [
+      "cool",
+      "cold",
+      "any"
+    ],
+    "logo": "/logos/jw-black.svg"
+  },
+  {
+    "id": "glenfiddich-12",
+    "displayName": "Glenfiddich 12",
+    "category": "scotch",
+    "flavorNotes": [
+      "pear",
+      "vanilla",
+      "oak"
+    ],
+    "vibeTags": [
+      "refined",
+      "balanced",
+      "relaxed"
+    ],
+    "strength": "medium",
+    "priceTier": "premium",
+    "mixers": [
+      "soda water"
+    ],
+    "occasions": [
+      "date night",
+      "celebration"
+    ],
+    "weatherFits": [
+      "cool",
+      "any"
+    ],
+    "logo": "/logos/glenfiddich-12.svg"
+  },
+  {
+    "id": "grey-goose",
+    "displayName": "Grey Goose",
+    "category": "vodka",
+    "flavorNotes": [
+      "clean",
+      "crisp",
+      "smooth"
+    ],
+    "vibeTags": [
+      "sleek",
+      "modern",
+      "cool"
+    ],
+    "strength": "light",
+    "priceTier": "premium",
+    "mixers": [
+      "soda water",
+      "tonic",
+      "cranberry juice",
+      "orange juice"
+    ],
+    "occasions": [
+      "club",
+      "date night",
+      "celebration"
+    ],
+    "weatherFits": [
+      "hot",
+      "warm",
+      "any"
+    ],
+    "logo": "/logos/grey-goose.svg"
+  },
+  {
+    "id": "absolut",
+    "displayName": "Absolut Vodka",
+    "category": "vodka",
+    "flavorNotes": [
+      "clean",
+      "grain",
+      "neutral"
+    ],
+    "vibeTags": [
+      "versatile",
+      "social",
+      "easygoing"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "soda water",
+      "tonic",
+      "cranberry juice",
+      "lemonade"
+    ],
+    "occasions": [
+      "house party",
+      "pre-game",
+      "bar"
+    ],
+    "weatherFits": [
+      "hot",
+      "warm",
+      "any"
+    ],
+    "logo": "/logos/absolut.svg"
+  },
+  {
+    "id": "titos",
+    "displayName": "Tito's Handmade Vodka",
+    "category": "vodka",
+    "flavorNotes": [
+      "clean",
+      "corn sweetness"
+    ],
+    "vibeTags": [
+      "friendly",
+      "approachable",
+      "casual"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "soda water",
+      "ginger beer",
+      "lemonade",
+      "cranberry juice"
+    ],
+    "occasions": [
+      "house party",
+      "game night",
+      "barbecue"
+    ],
+    "weatherFits": [
+      "hot",
+      "warm",
+      "any"
+    ],
+    "logo": "/logos/titos.svg"
+  },
+  {
+    "id": "smirnoff",
+    "displayName": "Smirnoff",
+    "category": "vodka",
+    "flavorNotes": [
+      "neutral",
+      "clean"
+    ],
+    "vibeTags": [
+      "budget",
+      "party",
+      "classic"
+    ],
+    "strength": "light",
+    "priceTier": "budget",
+    "mixers": [
+      "cola",
+      "orange juice",
+      "lemon-lime soda",
+      "cranberry juice"
+    ],
+    "occasions": [
+      "pre-game",
+      "house party"
+    ],
+    "weatherFits": [
+      "hot",
+      "warm",
+      "any"
+    ],
+    "logo": "/logos/smirnoff.svg"
+  },
+  {
+    "id": "bombay-sapphire",
+    "displayName": "Bombay Sapphire",
+    "category": "gin",
+    "flavorNotes": [
+      "citrus",
+      "juniper",
+      "floral"
+    ],
+    "vibeTags": [
+      "bright",
+      "botanical",
+      "refreshing"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "tonic",
+      "soda water",
+      "lemonade"
+    ],
+    "occasions": [
+      "date night",
+      "dinner",
+      "balcony chill"
+    ],
+    "weatherFits": [
+      "hot",
+      "warm"
+    ],
+    "logo": "/logos/bombay-sapphire.svg"
+  },
+  {
+    "id": "tanqueray",
+    "displayName": "Tanqueray",
+    "category": "gin",
+    "flavorNotes": [
+      "juniper-forward",
+      "herbal",
+      "spice"
+    ],
+    "vibeTags": [
+      "classic",
+      "crisp",
+      "evening"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "tonic",
+      "soda water",
+      "grapefruit soda"
+    ],
+    "occasions": [
+      "restaurant",
+      "date night"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/tanqueray.svg"
+  },
+  {
+    "id": "hendricks",
+    "displayName": "Hendrick's Gin",
+    "category": "gin",
+    "flavorNotes": [
+      "cucumber",
+      "rose",
+      "botanical"
+    ],
+    "vibeTags": [
+      "quirky",
+      "elegant",
+      "fresh"
+    ],
+    "strength": "light",
+    "priceTier": "premium",
+    "mixers": [
+      "tonic",
+      "soda water",
+      "lemonade"
+    ],
+    "occasions": [
+      "date night",
+      "garden party"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/hendricks.svg"
+  },
+  {
+    "id": "bacardi-superior",
+    "displayName": "Bacardi Superior",
+    "category": "rum",
+    "flavorNotes": [
+      "light",
+      "vanilla",
+      "almond"
+    ],
+    "vibeTags": [
+      "beachy",
+      "party",
+      "easygoing"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "cola",
+      "lemon-lime soda",
+      "pineapple juice",
+      "coconut water"
+    ],
+    "occasions": [
+      "house party",
+      "beach day",
+      "barbecue"
+    ],
+    "weatherFits": [
+      "hot",
+      "warm"
+    ],
+    "logo": "/logos/bacardi.svg"
+  },
+  {
+    "id": "captain-morgan-spiced",
+    "displayName": "Captain Morgan Original Spiced Rum",
+    "category": "rum",
+    "flavorNotes": [
+      "spice",
+      "vanilla",
+      "sweet"
+    ],
+    "vibeTags": [
+      "fun",
+      "party",
+      "casual"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "cola",
+      "ginger beer",
+      "cream soda"
+    ],
+    "occasions": [
+      "house party",
+      "pre-game"
+    ],
+    "weatherFits": [
+      "any"
+    ],
+    "logo": "/logos/captain-morgan.svg"
+  },
+  {
+    "id": "havana-club-7",
+    "displayName": "Havana Club 7",
+    "category": "rum",
+    "flavorNotes": [
+      "molasses",
+      "cocoa",
+      "tropical fruit"
+    ],
+    "vibeTags": [
+      "rich",
+      "vibrant",
+      "evening"
+    ],
+    "strength": "medium",
+    "priceTier": "mid",
+    "mixers": [
+      "cola",
+      "ginger beer",
+      "soda water"
+    ],
+    "occasions": [
+      "dinner",
+      "celebration"
+    ],
+    "weatherFits": [
+      "warm",
+      "cool",
+      "any"
+    ],
+    "logo": "/logos/havana-club-7.svg"
+  },
+  {
+    "id": "appleton-estate",
+    "displayName": "Appleton Estate Signature",
+    "category": "rum",
+    "flavorNotes": [
+      "orange peel",
+      "vanilla",
+      "molasses"
+    ],
+    "vibeTags": [
+      "island",
+      "smooth",
+      "laid-back"
+    ],
+    "strength": "medium",
+    "priceTier": "mid",
+    "mixers": [
+      "ginger beer",
+      "cola",
+      "pineapple juice"
+    ],
+    "occasions": [
+      "barbecue",
+      "house party"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/appleton-estate.svg"
+  },
+  {
+    "id": "patron-silver",
+    "displayName": "Patrón Silver",
+    "category": "tequila",
+    "flavorNotes": [
+      "citrus",
+      "pepper",
+      "agave"
+    ],
+    "vibeTags": [
+      "crisp",
+      "celebratory",
+      "clean"
+    ],
+    "strength": "medium",
+    "priceTier": "premium",
+    "mixers": [
+      "lime juice",
+      "soda water",
+      "grapefruit soda"
+    ],
+    "occasions": [
+      "celebration",
+      "club",
+      "pre-game"
+    ],
+    "weatherFits": [
+      "hot",
+      "warm"
+    ],
+    "logo": "/logos/patron-silver.svg"
+  },
+  {
+    "id": "don-julio-blanco",
+    "displayName": "Don Julio Blanco",
+    "category": "tequila",
+    "flavorNotes": [
+      "agave",
+      "citrus",
+      "pepper"
+    ],
+    "vibeTags": [
+      "smooth",
+      "clean",
+      "modern"
+    ],
+    "strength": "medium",
+    "priceTier": "premium",
+    "mixers": [
+      "lime juice",
+      "soda water",
+      "grapefruit soda"
+    ],
+    "occasions": [
+      "date night",
+      "celebration"
+    ],
+    "weatherFits": [
+      "hot",
+      "warm"
+    ],
+    "logo": "/logos/don-julio-blanco.svg"
+  },
+  {
+    "id": "casamigos-blanco",
+    "displayName": "Casamigos Blanco",
+    "category": "tequila",
+    "flavorNotes": [
+      "vanilla",
+      "citrus",
+      "agave"
+    ],
+    "vibeTags": [
+      "smooth",
+      "trendy",
+      "easygoing"
+    ],
+    "strength": "medium",
+    "priceTier": "premium",
+    "mixers": [
+      "lime juice",
+      "soda water",
+      "grapefruit soda"
+    ],
+    "occasions": [
+      "club",
+      "date night"
+    ],
+    "weatherFits": [
+      "hot",
+      "warm"
+    ],
+    "logo": "/logos/casamigos-blanco.svg"
+  },
+  {
+    "id": "jose-cuervo-especial",
+    "displayName": "Jose Cuervo Especial",
+    "category": "tequila",
+    "flavorNotes": [
+      "sweet",
+      "agave",
+      "vanilla"
+    ],
+    "vibeTags": [
+      "party",
+      "budget",
+      "fun"
+    ],
+    "strength": "medium",
+    "priceTier": "budget",
+    "mixers": [
+      "lime juice",
+      "orange juice",
+      "cola"
+    ],
+    "occasions": [
+      "house party",
+      "pre-game"
+    ],
+    "weatherFits": [
+      "any"
+    ],
+    "logo": "/logos/jose-cuervo.svg"
+  },
+  {
+    "id": "del-maguey-vida",
+    "displayName": "Del Maguey Vida Mezcal",
+    "category": "mezcal",
+    "flavorNotes": [
+      "smoke",
+      "agave",
+      "citrus"
+    ],
+    "vibeTags": [
+      "adventurous",
+      "craft",
+      "bold"
+    ],
+    "strength": "strong",
+    "priceTier": "premium",
+    "mixers": [
+      "grapefruit soda",
+      "lime juice",
+      "ginger beer"
+    ],
+    "occasions": [
+      "date night",
+      "celebration"
+    ],
+    "weatherFits": [
+      "warm",
+      "cool"
+    ],
+    "logo": "/logos/del-maguey-vida.svg"
+  },
+  {
+    "id": "montelobos",
+    "displayName": "Montelobos Mezcal",
+    "category": "mezcal",
+    "flavorNotes": [
+      "smoke",
+      "herbal",
+      "agave"
+    ],
+    "vibeTags": [
+      "craft",
+      "edgy",
+      "sophisticated"
+    ],
+    "strength": "strong",
+    "priceTier": "premium",
+    "mixers": [
+      "grapefruit soda",
+      "lime juice",
+      "ginger beer"
+    ],
+    "occasions": [
+      "dinner",
+      "celebration"
+    ],
+    "weatherFits": [
+      "cool",
+      "any"
+    ],
+    "logo": "/logos/montelobos.svg"
+  },
+  {
+    "id": "baileys",
+    "displayName": "Baileys Irish Cream",
+    "category": "liqueur",
+    "flavorNotes": [
+      "cream",
+      "chocolate",
+      "vanilla"
+    ],
+    "vibeTags": [
+      "cozy",
+      "dessert",
+      "smooth"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "coffee",
+      "milk",
+      "hot chocolate"
+    ],
+    "occasions": [
+      "after-dinner",
+      "holiday",
+      "movie night"
+    ],
+    "weatherFits": [
+      "cold",
+      "rainy"
+    ],
+    "logo": "/logos/baileys.svg"
+  },
+  {
+    "id": "kahlua",
+    "displayName": "Kahlúa",
+    "category": "liqueur",
+    "flavorNotes": [
+      "coffee",
+      "vanilla",
+      "sweet"
+    ],
+    "vibeTags": [
+      "dessert",
+      "cozy",
+      "late-night"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "milk",
+      "cream",
+      "coffee"
+    ],
+    "occasions": [
+      "after-dinner",
+      "movie night"
+    ],
+    "weatherFits": [
+      "cold",
+      "rainy"
+    ],
+    "logo": "/logos/kahlua.svg"
+  },
+  {
+    "id": "aperol",
+    "displayName": "Aperol",
+    "category": "liqueur",
+    "flavorNotes": [
+      "orange",
+      "bitter-sweet",
+      "herbal"
+    ],
+    "vibeTags": [
+      "sunny",
+      "spritz",
+      "light"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "prosecco",
+      "soda water"
+    ],
+    "occasions": [
+      "brunch",
+      "patio",
+      "celebration"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/aperol.svg"
+  },
+  {
+    "id": "campari",
+    "displayName": "Campari",
+    "category": "liqueur",
+    "flavorNotes": [
+      "bitter",
+      "orange",
+      "herbal"
+    ],
+    "vibeTags": [
+      "bold",
+      "classic",
+      "aperitivo"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "soda water",
+      "orange juice"
+    ],
+    "occasions": [
+      "dinner",
+      "aperitivo"
+    ],
+    "weatherFits": [
+      "warm",
+      "any"
+    ],
+    "logo": "/logos/campari.svg"
+  },
+  {
+    "id": "jägermeister",
+    "displayName": "Jägermeister",
+    "category": "liqueur",
+    "flavorNotes": [
+      "herbal",
+      "spice",
+      "sweet"
+    ],
+    "vibeTags": [
+      "party",
+      "edgy",
+      "late-night"
+    ],
+    "strength": "medium",
+    "priceTier": "mid",
+    "mixers": [
+      "energy drink",
+      "cola",
+      "ginger beer"
+    ],
+    "occasions": [
+      "club",
+      "house party"
+    ],
+    "weatherFits": [
+      "any"
+    ],
+    "logo": "/logos/jagermeister.svg"
+  },
+  {
+    "id": "cointreau",
+    "displayName": "Cointreau",
+    "category": "liqueur",
+    "flavorNotes": [
+      "orange",
+      "zesty",
+      "sweet"
+    ],
+    "vibeTags": [
+      "bright",
+      "citrusy",
+      "classic"
+    ],
+    "strength": "light",
+    "priceTier": "premium",
+    "mixers": [
+      "lime juice",
+      "soda water",
+      "cranberry juice"
+    ],
+    "occasions": [
+      "date night",
+      "dinner"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/cointreau.svg"
+  },
+  {
+    "id": "strongbow",
+    "displayName": "Strongbow Cider",
+    "category": "cider",
+    "flavorNotes": [
+      "apple",
+      "crisp",
+      "dry"
+    ],
+    "vibeTags": [
+      "refreshing",
+      "casual",
+      "daytime"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "ginger ale",
+      "lemonade"
+    ],
+    "occasions": [
+      "picnic",
+      "patio"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/strongbow.svg"
+  },
+  {
+    "id": "somersby",
+    "displayName": "Somersby Apple Cider",
+    "category": "cider",
+    "flavorNotes": [
+      "apple",
+      "sweet",
+      "light"
+    ],
+    "vibeTags": [
+      "easygoing",
+      "sweet",
+      "refreshing"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "lemonade",
+      "soda water"
+    ],
+    "occasions": [
+      "picnic",
+      "patio"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/somersby.svg"
+  },
+  {
+    "id": "bud-light",
+    "displayName": "Bud Light",
+    "category": "beer",
+    "flavorNotes": [
+      "light",
+      "crisp",
+      "grain"
+    ],
+    "vibeTags": [
+      "game-day",
+      "casual",
+      "social"
+    ],
+    "strength": "light",
+    "priceTier": "budget",
+    "mixers": [
+      "lemon-lime soda",
+      "tomato juice"
+    ],
+    "occasions": [
+      "game night",
+      "barbecue",
+      "house party"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/bud-light.svg"
+  },
+  {
+    "id": "heineken",
+    "displayName": "Heineken",
+    "category": "beer",
+    "flavorNotes": [
+      "crisp",
+      "bready",
+      "light bitterness"
+    ],
+    "vibeTags": [
+      "classic",
+      "international",
+      "casual"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "lemon-lime soda",
+      "tomato juice"
+    ],
+    "occasions": [
+      "barbecue",
+      "house party"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/heineken.svg"
+  },
+  {
+    "id": "corona-extra",
+    "displayName": "Corona Extra",
+    "category": "beer",
+    "flavorNotes": [
+      "citrus-friendly",
+      "light",
+      "crisp"
+    ],
+    "vibeTags": [
+      "beachy",
+      "laid-back",
+      "sunny"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "lime juice"
+    ],
+    "occasions": [
+      "beach day",
+      "patio"
+    ],
+    "weatherFits": [
+      "hot",
+      "warm"
+    ],
+    "logo": "/logos/corona.svg"
+  },
+  {
+    "id": "guinness-draught",
+    "displayName": "Guinness Draught",
+    "category": "beer",
+    "flavorNotes": [
+      "roasty",
+      "creamy",
+      "malty"
+    ],
+    "vibeTags": [
+      "cozy",
+      "pub",
+      "classic"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "none"
+    ],
+    "occasions": [
+      "pub",
+      "dinner"
+    ],
+    "weatherFits": [
+      "cool",
+      "cold"
+    ],
+    "logo": "/logos/guinness.svg"
+  },
+  {
+    "id": "alberta-premium",
+    "displayName": "Alberta Premium Rye",
+    "category": "whiskey",
+    "flavorNotes": [
+      "rye spice",
+      "vanilla",
+      "oak"
+    ],
+    "vibeTags": [
+      "Canadian",
+      "bold",
+      "warm"
+    ],
+    "strength": "medium",
+    "priceTier": "mid",
+    "mixers": [
+      "ginger ale",
+      "cola"
+    ],
+    "occasions": [
+      "house party",
+      "game night"
+    ],
+    "weatherFits": [
+      "cool",
+      "cold",
+      "any"
+    ],
+    "logo": "/logos/alberta-premium.svg"
+  },
+  {
+    "id": "forty-creek",
+    "displayName": "Forty Creek",
+    "category": "whiskey",
+    "flavorNotes": [
+      "vanilla",
+      "fruit",
+      "oak"
+    ],
+    "vibeTags": [
+      "smooth",
+      "Canadian",
+      "approachable"
+    ],
+    "strength": "medium",
+    "priceTier": "mid",
+    "mixers": [
+      "ginger ale",
+      "cola",
+      "soda water"
+    ],
+    "occasions": [
+      "dinner",
+      "house party"
+    ],
+    "weatherFits": [
+      "cool",
+      "any"
+    ],
+    "logo": "/logos/forty-creek.svg"
+  },
+  {
+    "id": "diplomatico-reserva",
+    "displayName": "Diplomático Reserva Exclusiva",
+    "category": "rum",
+    "flavorNotes": [
+      "toffee",
+      "orange peel",
+      "cocoa"
+    ],
+    "vibeTags": [
+      "dessert",
+      "rich",
+      "sipping"
+    ],
+    "strength": "medium",
+    "priceTier": "premium",
+    "mixers": [
+      "orange peel",
+      "soda water"
+    ],
+    "occasions": [
+      "after-dinner",
+      "date night"
+    ],
+    "weatherFits": [
+      "cool",
+      "cold"
+    ],
+    "logo": "/logos/diplomatico.svg"
+  },
+  {
+    "id": "herradura-reposado",
+    "displayName": "Herradura Reposado",
+    "category": "tequila",
+    "flavorNotes": [
+      "oak",
+      "vanilla",
+      "agave"
+    ],
+    "vibeTags": [
+      "smooth",
+      "golden-hour",
+      "refined"
+    ],
+    "strength": "medium",
+    "priceTier": "premium",
+    "mixers": [
+      "lime juice",
+      "soda water"
+    ],
+    "occasions": [
+      "date night",
+      "dinner"
+    ],
+    "weatherFits": [
+      "warm",
+      "cool"
+    ],
+    "logo": "/logos/herradura-reposado.svg"
+  },
+  {
+    "id": "el-jimador-reposado",
+    "displayName": "el Jimador Reposado",
+    "category": "tequila",
+    "flavorNotes": [
+      "oak",
+      "agave",
+      "spice"
+    ],
+    "vibeTags": [
+      "budget",
+      "smooth",
+      "party"
+    ],
+    "strength": "medium",
+    "priceTier": "mid",
+    "mixers": [
+      "lime juice",
+      "orange juice",
+      "soda water"
+    ],
+    "occasions": [
+      "house party",
+      "pre-game"
+    ],
+    "weatherFits": [
+      "any"
+    ],
+    "logo": "/logos/el-jimador.svg"
+  },
+  {
+    "id": "empress-1908",
+    "displayName": "Empress 1908 Gin",
+    "category": "gin",
+    "flavorNotes": [
+      "citrus",
+      "botanical",
+      "tea"
+    ],
+    "vibeTags": [
+      "colorful",
+      "instagrammable",
+      "modern"
+    ],
+    "strength": "light",
+    "priceTier": "premium",
+    "mixers": [
+      "tonic",
+      "soda water",
+      "lemonade"
+    ],
+    "occasions": [
+      "date night",
+      "patio"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/empress-1908.svg"
+  },
+  {
+    "id": "ciroc",
+    "displayName": "Cîroc",
+    "category": "vodka",
+    "flavorNotes": [
+      "grape",
+      "clean",
+      "smooth"
+    ],
+    "vibeTags": [
+      "lux",
+      "club",
+      "sleek"
+    ],
+    "strength": "light",
+    "priceTier": "premium",
+    "mixers": [
+      "cranberry juice",
+      "soda water",
+      "lemonade"
+    ],
+    "occasions": [
+      "club",
+      "celebration"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/ciroc.svg"
+  },
+  {
+    "id": "laphroaig-10",
+    "displayName": "Laphroaig 10",
+    "category": "scotch",
+    "flavorNotes": [
+      "peat smoke",
+      "iodine",
+      "seaweed"
+    ],
+    "vibeTags": [
+      "bold",
+      "acquired-taste",
+      "coastal"
+    ],
+    "strength": "strong",
+    "priceTier": "premium",
+    "mixers": [
+      "soda water"
+    ],
+    "occasions": [
+      "quiet night",
+      "after-dinner"
+    ],
+    "weatherFits": [
+      "cold",
+      "rainy"
+    ],
+    "logo": "/logos/laphroaig-10.svg"
+  },
+  {
+    "id": "wild-turkey-101",
+    "displayName": "Wild Turkey 101",
+    "category": "bourbon",
+    "flavorNotes": [
+      "caramel",
+      "spice",
+      "oak"
+    ],
+    "vibeTags": [
+      "strong",
+      "classic",
+      "bold"
+    ],
+    "strength": "strong",
+    "priceTier": "mid",
+    "mixers": [
+      "cola",
+      "ginger beer"
+    ],
+    "occasions": [
+      "barbecue",
+      "pre-game"
+    ],
+    "weatherFits": [
+      "cool",
+      "cold"
+    ],
+    "logo": "/logos/wild-turkey-101.svg"
+  },
+  {
+    "id": "bullet-rye",
+    "displayName": "Bulleit Rye",
+    "category": "whiskey",
+    "flavorNotes": [
+      "rye spice",
+      "citrus",
+      "oak"
+    ],
+    "vibeTags": [
+      "cocktail-friendly",
+      "bold",
+      "modern"
+    ],
+    "strength": "strong",
+    "priceTier": "mid",
+    "mixers": [
+      "ginger ale",
+      "soda water",
+      "bitters"
+    ],
+    "occasions": [
+      "dinner",
+      "date night"
+    ],
+    "weatherFits": [
+      "cool",
+      "any"
+    ],
+    "logo": "/logos/bulleit-rye.svg"
+  },
+  {
+    "id": "kraken-black-spiced",
+    "displayName": "The Kraken Black Spiced Rum",
+    "category": "rum",
+    "flavorNotes": [
+      "molasses",
+      "spice",
+      "vanilla"
+    ],
+    "vibeTags": [
+      "dark",
+      "bold",
+      "party"
+    ],
+    "strength": "medium",
+    "priceTier": "mid",
+    "mixers": [
+      "cola",
+      "ginger beer"
+    ],
+    "occasions": [
+      "house party",
+      "pre-game"
+    ],
+    "weatherFits": [
+      "any"
+    ],
+    "logo": "/logos/kraken.svg"
+  },
+  {
+    "id": "casamigos-anejo",
+    "displayName": "Casamigos Añejo",
+    "category": "tequila",
+    "flavorNotes": [
+      "vanilla",
+      "caramel",
+      "oak"
+    ],
+    "vibeTags": [
+      "smooth",
+      "sipping",
+      "evening"
+    ],
+    "strength": "medium",
+    "priceTier": "premium",
+    "mixers": [
+      "soda water",
+      "orange twist"
+    ],
+    "occasions": [
+      "date night",
+      "after-dinner"
+    ],
+    "weatherFits": [
+      "cool",
+      "any"
+    ],
+    "logo": "/logos/casamigos-anejo.svg"
+  },
+  {
+    "id": "averna",
+    "displayName": "Averna Amaro",
+    "category": "liqueur",
+    "flavorNotes": [
+      "herbal",
+      "caramel",
+      "bitter-sweet"
+    ],
+    "vibeTags": [
+      "digestif",
+      "classic",
+      "cozy"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "soda water",
+      "orange peel"
+    ],
+    "occasions": [
+      "after-dinner",
+      "dinner"
+    ],
+    "weatherFits": [
+      "cool",
+      "any"
+    ],
+    "logo": "/logos/averna.svg"
+  },
+  {
+    "id": "beefeater",
+    "displayName": "Beefeater",
+    "category": "gin",
+    "flavorNotes": [
+      "juniper",
+      "citrus",
+      "spice"
+    ],
+    "vibeTags": [
+      "classic",
+      "balanced",
+      "urban"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "tonic",
+      "soda water"
+    ],
+    "occasions": [
+      "restaurant",
+      "patio"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/beefeater.svg"
+  },
+  {
+    "id": "polar-ice",
+    "displayName": "Polar Ice",
+    "category": "vodka",
+    "flavorNotes": [
+      "clean",
+      "neutral"
+    ],
+    "vibeTags": [
+      "budget",
+      "party",
+      "chill"
+    ],
+    "strength": "light",
+    "priceTier": "budget",
+    "mixers": [
+      "lemon-lime soda",
+      "cranberry juice",
+      "orange juice"
+    ],
+    "occasions": [
+      "pre-game",
+      "house party"
+    ],
+    "weatherFits": [
+      "hot",
+      "warm",
+      "any"
+    ],
+    "logo": "/logos/polar-ice.svg"
+  },
+  {
+    "id": "macallan-12",
+    "displayName": "The Macallan 12 Sherry Oak",
+    "category": "scotch",
+    "flavorNotes": [
+      "sherry",
+      "oak",
+      "dried fruit"
+    ],
+    "vibeTags": [
+      "lux",
+      "evening",
+      "refined"
+    ],
+    "strength": "medium",
+    "priceTier": "premium",
+    "mixers": [
+      "soda water"
+    ],
+    "occasions": [
+      "date night",
+      "celebration"
+    ],
+    "weatherFits": [
+      "cool",
+      "cold"
+    ],
+    "logo": "/logos/macallan-12.svg"
+  },
+  {
+    "id": "high-west-double-rye",
+    "displayName": "High West Double Rye",
+    "category": "whiskey",
+    "flavorNotes": [
+      "mint",
+      "spice",
+      "oak"
+    ],
+    "vibeTags": [
+      "craft",
+      "bold",
+      "cocktail-forward"
+    ],
+    "strength": "strong",
+    "priceTier": "premium",
+    "mixers": [
+      "ginger ale",
+      "bitters",
+      "soda water"
+    ],
+    "occasions": [
+      "dinner",
+      "date night"
+    ],
+    "weatherFits": [
+      "cool",
+      "any"
+    ],
+    "logo": "/logos/high-west-double-rye.svg"
+  },
+  {
+    "id": "malibu",
+    "displayName": "Malibu",
+    "category": "rum",
+    "flavorNotes": [
+      "coconut",
+      "sweet",
+      "light"
+    ],
+    "vibeTags": [
+      "beachy",
+      "fun",
+      "sweet"
+    ],
+    "strength": "light",
+    "priceTier": "mid",
+    "mixers": [
+      "pineapple juice",
+      "cola",
+      "lemon-lime soda"
+    ],
+    "occasions": [
+      "beach day",
+      "house party"
+    ],
+    "weatherFits": [
+      "hot",
+      "warm"
+    ],
+    "logo": "/logos/malibu.svg"
+  },
+  {
+    "id": "olmeca-altos-plata",
+    "displayName": "Olmeca Altos Plata",
+    "category": "tequila",
+    "flavorNotes": [
+      "agave",
+      "citrus",
+      "pepper"
+    ],
+    "vibeTags": [
+      "budget",
+      "cocktail-friendly",
+      "fresh"
+    ],
+    "strength": "medium",
+    "priceTier": "mid",
+    "mixers": [
+      "lime juice",
+      "grapefruit soda",
+      "soda water"
+    ],
+    "occasions": [
+      "house party",
+      "pre-game"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/altos-plata.svg"
+  },
+  {
+    "id": "belvedere",
+    "displayName": "Belvedere",
+    "category": "vodka",
+    "flavorNotes": [
+      "clean",
+      "pepper",
+      "silky"
+    ],
+    "vibeTags": [
+      "sleek",
+      "premium",
+      "evening"
+    ],
+    "strength": "light",
+    "priceTier": "premium",
+    "mixers": [
+      "soda water",
+      "tonic",
+      "cranberry juice"
+    ],
+    "occasions": [
+      "date night",
+      "club"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/belvedere.svg"
+  },
+  {
+    "id": "triple-sec",
+    "displayName": "Triple Sec",
+    "category": "liqueur",
+    "flavorNotes": [
+      "orange",
+      "sweet",
+      "zesty"
+    ],
+    "vibeTags": [
+      "citrusy",
+      "classic",
+      "mixable"
+    ],
+    "strength": "light",
+    "priceTier": "budget",
+    "mixers": [
+      "lime juice",
+      "cranberry juice",
+      "soda water"
+    ],
+    "occasions": [
+      "house party",
+      "dinner"
+    ],
+    "weatherFits": [
+      "warm",
+      "hot"
+    ],
+    "logo": "/logos/triple-sec.svg"
+  }
+]
