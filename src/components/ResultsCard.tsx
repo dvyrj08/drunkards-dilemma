@@ -64,7 +64,9 @@ export default function ResultsCard({
             <div className="flex flex-wrap gap-2">
               {alts.map(a => { const lp = logoPropsFor(a.id, a.displayName); return (
                 <span key={a.id} className="chip flex items-center gap-2">
-                  <BrandLogo {...lp} name={a.displayName} size={18} />
+                  <span className="bg-white rounded-md p-0.5 flex items-center justify-center flex-shrink-0" style={{width:28,height:28}}>
+                    <BrandLogo {...lp} name={a.displayName} size={22} />
+                  </span>
                   {a.displayName}
                 </span>
               )})}
