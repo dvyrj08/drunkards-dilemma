@@ -88,10 +88,13 @@ export function scoreBrands(answers: Answers): ScoreResult {
   scored.sort((a, b) => b.score - a.score)
 
   const top = scored[0]
+  const second = scored[1]
   const winner = top?.brand
 
-  const confidence = top && top.maxScore > 0
-    ? Math.min(100, Math.round((top.score / top.maxScore) * 100))
+  // Gap-based confidence: how far ahead is the winner vs the next candidate?
+  // Tight race = low confidence, clear winner = high confidence
+  const confidence = top && top.score > 0
+    ? Math.min(100, Math.round(((top.score - (second?.score ?? 0)) / top.score) * 100))
     : 0
 
   let mixer = 'soda water'
