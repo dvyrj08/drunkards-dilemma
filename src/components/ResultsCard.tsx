@@ -34,7 +34,7 @@ export default function ResultsCard({
         <div className="flex items-start justify-between">
           <div className="brand-lockup">
        <BrandLogo
-  {...logoPropsFor(brand?.id, brand?.displayName)}
+  {...logoPropsFor(brand?.id)}
   name={brand?.displayName || ''}
   size={64}
   className="logo-chip"
@@ -62,11 +62,9 @@ export default function ResultsCard({
           <div>
             <p className="text-sm text-white/80 mb-2">Also try</p>
             <div className="flex flex-wrap gap-2">
-              {alts.map(a => { const lp = logoPropsFor(a.id, a.displayName); return (
+              {alts.map(a => { const lp = logoPropsFor(a.id); return (
                 <span key={a.id} className="chip flex items-center gap-2">
-                  <span className="rounded-md p-0.5 flex items-center justify-center flex-shrink-0" style={{width:28,height:28,background:'#f0ede8'}}>
-                    <BrandLogo {...lp} name={a.displayName} size={22} />
-                  </span>
+                  <BrandLogo {...lp} name={a.displayName} size={26} className="flex-shrink-0" />
                   {a.displayName}
                 </span>
               )})}

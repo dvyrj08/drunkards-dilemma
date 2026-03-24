@@ -42,7 +42,7 @@ html, body, #root {
 .grad-beer    { background: linear-gradient(135deg, #c58a1e, #ffe08a); }
 
 .category-pill { @apply text-xs font-semibold bg-white/20 px-2 py-1 rounded-full; }
-.logo-chip { @apply rounded-xl p-2 shadow-lg; background: #f0ede8; }
+.logo-chip { @apply rounded-xl shadow-lg; }
 
 .header-bar { @apply flex items-center justify-between gap-3; }
 .header-left { @apply flex items-center gap-3; }

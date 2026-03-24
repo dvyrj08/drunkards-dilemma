@@ -1,4 +1,4 @@
-export type LogoProps = { id?: string; slug?: string; domain?: string };
+export type LogoProps = { id?: string; domain?: string; bg?: string };
 
 const DOMAIN_MAP: Record<string, string> = {
   "absolut": "absolut.com",
@@ -72,7 +72,10 @@ const simpleSlugFromId = (id?: string) => {
   return core || id.replace(/[^a-z0-9]+/g, '');
 };
 
-export const logoPropsFor = (id?: string, displayName?: string): LogoProps => {
+import logoBg from '../data/logoBg.json'
+
+export const logoPropsFor = (id?: string): LogoProps => {
   const domain = id ? DOMAIN_MAP[id] : undefined;
-  return { id, domain };
+  const bg = id ? (logoBg as Record<string, string>)[id] : undefined;
+  return { id, domain, bg };
 };
