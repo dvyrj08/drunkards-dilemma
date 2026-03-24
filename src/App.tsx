@@ -75,9 +75,6 @@ export default function App() {
           </div>
         </div>
 
-        {!done && (
-          <button className="btn btn-primary" onClick={rollTheDice}>Roll the Dice</button>
-        )}
       </header>
 
       {!done ? (
