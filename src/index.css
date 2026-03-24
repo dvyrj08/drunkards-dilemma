@@ -24,7 +24,7 @@ html, body, #root {
   @apply px-4 py-3 rounded-xl bg-white/10 border border-white/10 hover:bg-white/15 transition text-sm;
 }
 .chip-selected {
-  @apply bg-white text-black;
+  @apply bg-white text-black hover:bg-white;
 }
 
 
