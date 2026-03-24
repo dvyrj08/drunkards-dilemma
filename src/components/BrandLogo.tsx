@@ -10,6 +10,15 @@ type Props = {
   priority?: string;
 };
 
+function Initials({ name, size, className }: { name: string; size: number; className?: string }) {
+  const initials = name.split(' ').slice(0, 2).map(w => w[0]).join('').toUpperCase();
+  return (
+    <div className={className} style={{ width: size, height: size, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f0ede8', borderRadius: 8, color: '#555', fontWeight: 700, fontSize: size * 0.38 }}>
+      {initials}
+    </div>
+  );
+}
+
 export default function BrandLogo({ name, id, domain, size = 48, title, className }: Props) {
   const sources = [
     id && `/logos/${id}.png`,
@@ -19,14 +28,11 @@ export default function BrandLogo({ name, id, domain, size = 48, title, classNam
   ].filter(Boolean) as string[];
 
   const [idx, setIdx] = useState(0);
+  const [allFailed, setAllFailed] = useState(false);
+
+  if (allFailed || sources.length === 0) return <Initials name={name} size={size} className={className} />;
 
   const src = sources[idx];
-
-  if (!src) return (
-    <div className={className} style={{ width: size, height: size, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#1e293b', borderRadius: 8, color: '#fff', fontWeight: 700, fontSize: size * 0.38 }}>
-      {name.split(' ').slice(0, 2).map(w => w[0]).join('').toUpperCase()}
-    </div>
-  );
 
   return (
     <img
@@ -40,6 +46,7 @@ export default function BrandLogo({ name, id, domain, size = 48, title, classNam
       style={{ width: size, height: size, objectFit: "contain" }}
       onError={() => {
         if (idx < sources.length - 1) setIdx(idx + 1);
+        else setAllFailed(true);
       }}
     />
   );
