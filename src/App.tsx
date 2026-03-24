@@ -56,7 +56,7 @@ export default function App() {
 
   const rationale = useMemo(
     () => winner
-      ? wittyRationale(answers, winner, confidence)
+      ? wittyRationale(answers, winner)
       : 'Nothing matched cleanly. Pick any whiskey and call it a character arc.',
     [answers, winner, confidence]
   )

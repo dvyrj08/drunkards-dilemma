@@ -17,13 +17,6 @@ const catClass: Record<NonNullable<Brand['category']>, string> = {
   beer:    'grad-beer',
 }
 
-function ConfidenceBadge({ confidence }: { confidence: number }) {
-  const { label, color } =
-    confidence >= 70 ? { label: 'Strong match', color: 'bg-green-500/20 text-green-300' } :
-    confidence >= 45 ? { label: 'Good match',   color: 'bg-yellow-500/20 text-yellow-300' } :
-                       { label: 'Loose match',  color: 'bg-white/10 text-white/50' }
-  return <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${color}`}>{label}</span>
-}
 
 export default function ResultsCard({
   brand, mixer, rationale, onRetake, alts, confidence
@@ -45,9 +38,8 @@ export default function ResultsCard({
        <BrandLogo
   {...logoPropsFor(brand?.id)}
   name={brand?.displayName || ''}
-  size={64}
+  size={80}
   className="logo-chip"
-  priority="simple"
 />
 
             <div>
@@ -55,10 +47,7 @@ export default function ResultsCard({
               <p className="text-white/90">{rationale}</p>
             </div>
           </div>
-          <div className="flex flex-col items-end gap-1">
-            {brand?.category && <span className="category-pill">{brand.category}</span>}
-            <ConfidenceBadge confidence={confidence} />
-          </div>
+          {brand?.category && <span className="category-pill">{brand.category}</span>}
         </div>
       </div>
 

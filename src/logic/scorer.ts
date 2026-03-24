@@ -121,14 +121,10 @@ export function scoreBrands(answers: Answers): ScoreResult {
   return { winner, mixer, alts, confidence }
 }
 
-export function wittyRationale(ans: Answers, brand: Brand, confidence: number): string {
+export function wittyRationale(ans: Answers, brand: Brand): string {
   const name = brand.displayName
-
-  if (confidence < 35) {
-    return `${name} is the closest match, but your answers left room for interpretation. Answer more questions for a tighter result.`
-  }
-
   const { mood, occasion, flavor, place, weather } = ans
+
   const pick = [
     mood && occasion  ? `${name} — ${mood} energy at a ${occasion} basically wrote the brief.`  : null,
     flavor && mood    ? `You said ${flavor} and ${mood}. ${name} fits both without trying.`      : null,
