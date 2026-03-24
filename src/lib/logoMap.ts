@@ -1,4 +1,4 @@
-export type LogoProps = { slug?: string; domain?: string };
+export type LogoProps = { id?: string; slug?: string; domain?: string };
 
 // Best-effort mapping from brand IDs to Clearbit domains (and inferred Simple Icons slugs)
 const DOMAIN_MAP: Record<string, string> = {
@@ -73,6 +73,5 @@ const simpleSlugFromId = (id?: string) => {
 
 export const logoPropsFor = (id?: string, displayName?: string): LogoProps => {
   const domain = id ? DOMAIN_MAP[id] : undefined;
-  const slug = simpleSlugFromId(id || displayName?.toLowerCase().replace(/\s+/g, '-'));
-  return { slug, domain };
+  return { id, domain };
 };
