@@ -40,20 +40,6 @@ export default function App() {
     setI(Math.min(total, i+1))
   }
 
-  const rollTheDice = async () => {
-    // auto-randomize all answers with a quick spin and jump to results
-    for (let stepIdx = 0; stepIdx < steps.length; stepIdx++) {
-      const step = steps[stepIdx]
-      // spin a few times
-      for (let spin = 0; spin < 6; spin++) {
-        const rand = step.options[Math.floor(Math.random()*step.options.length)]
-        setAnswers(prev => ({ ...prev, [step.key]: rand }))
-        await new Promise(r => setTimeout(r, 80))
-      }
-    }
-    setI(total) // go to results
-  }
-
   const done = i >= total
 
   const { winner, mixer, alts } = useMemo(()=> {
@@ -67,7 +53,7 @@ export default function App() {
   return (
     <main className="min-h-screen max-w-md mx-auto px-4 py-6 space-y-6">
       <header className="header-bar">
-        <button className="header-left cursor-pointer" onClick={() => { setAnswers({}); setI(0) }}>
+        <button className="header-left cursor-pointer hover:opacity-75 transition-opacity" onClick={() => { setAnswers({}); setI(0) }}>
           <img src="/logo.svg" alt="Drunkard’s Dilemma" className="w-9 h-9" />
           <div>
             <h1 className="text-xl font-extrabold leading-tight">Drunkard’s Dilemma</h1>

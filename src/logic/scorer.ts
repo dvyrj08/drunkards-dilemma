@@ -82,11 +82,23 @@ export function scoreBrands(answers: Answers) {
 }
 
 export function wittyRationale(ans: Answers, brand: Brand) {
-  const bits: string[] = []
-  if (ans.mood) bits.push(`${ans.mood} mood`)
-  if (ans.occasion) bits.push(ans.occasion)
-  if (ans.weather) bits.push(ans.weather + ' weather')
-  if (ans.flavor) bits.push(ans.flavor + ' vibes')
-  const ctx = bits.slice(0,3).join(' + ') || 'your answers'
-  return `Picked ${brand.displayName} for ${ctx}. It just makes sense.`
+  const name = brand.displayName
+  const mood = ans.mood
+  const occasion = ans.occasion
+  const flavor = ans.flavor
+  const place = ans.place
+  const weather = ans.weather
+
+  const templates = [
+    mood && occasion ? `${name} — because ${mood} energy at a ${occasion} is a vibe.` : null,
+    flavor && mood ? `You said ${flavor} and ${mood}. ${name} heard you loud and clear.` : null,
+    place && occasion ? `${name} fits ${place} + ${occasion} like it was made for it.` : null,
+    weather && flavor ? `${weather} weather, ${flavor} flavors — ${name} was the obvious call.` : null,
+    mood ? `${mood} mood? ${name} doesn't miss for that energy.` : null,
+    occasion ? `For a ${occasion}, ${name} just makes sense.` : null,
+    flavor ? `You wanted ${flavor}. ${name} delivers.` : null,
+    `${name} scored highest across your answers. Trust the algorithm.`,
+  ].filter(Boolean) as string[]
+
+  return templates[0]
 }

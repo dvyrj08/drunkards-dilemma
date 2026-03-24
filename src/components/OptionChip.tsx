@@ -8,6 +8,7 @@ export default function OptionChip({
       className={`chip ${selected ? 'chip-selected' : ''}`}
       onClick={onClick}
       type="button"
+      aria-pressed={selected}
     >
       {label}
     </button>

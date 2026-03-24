@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import type { Brand } from '../types'
 import BrandLogo from './BrandLogo'
 import { logoPropsFor } from '../lib/logoMap'
@@ -27,6 +27,7 @@ export default function ResultsCard({
   alts: Brand[]
 }) {
   const grad = brand ? catClass[brand.category] : 'bg-white/10'
+  const [copied, setCopied] = useState(false)
   return (
     <div className={`rounded-2xl overflow-hidden shadow-lg`}>
       <div className={`p-5 ${grad}`}>
@@ -75,14 +76,16 @@ export default function ResultsCard({
           <button className="btn btn-primary" onClick={onRetake}>Retake</button>
           <button
             className="btn"
-            onClick={()=>{
+            onClick={async ()=>{
               const text = `${brand?.displayName} + ${mixer} — via Drunkard's Dilemma`
-              navigator.clipboard.writeText(text)
+              try {
+                await navigator.clipboard.writeText(text)
+                setCopied(true)
+                setTimeout(() => setCopied(false), 2000)
+              } catch {}
             }}
-          >Share</button>
+          >{copied ? 'Copied!' : 'Share'}</button>
         </div>
-
-        <p className="text-xs text-white/60 pt-2">18+/21+ only. Please drink responsibly.</p>
       </div>
     </div>
   )
