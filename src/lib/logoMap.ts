@@ -37,7 +37,7 @@ const DOMAIN_MAP: Record<string, string> = {
   "herradura-reposado": "herradura.com",
   "high-west-double-rye": "highwest.com",
   "jack-daniels": "jackdaniels.com",
-  "jägermeister": "jagermeister.com",
+  "jagermeister": "jagermeister.com",
   "jameson": "jamesonwhiskey.com",
   "johnnie-walker-black": "johnniewalker.com",
   "jose-cuervo-especial": "cuervo.com",

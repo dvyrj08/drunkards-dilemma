@@ -48,7 +48,7 @@ export default function ResultsCard({
         )}
 
         {brand
-          ? <ConvinceMe brand={brand} />
+          ? <ConvinceMe key={brand.id} brand={brand} />
           : <BrandLogo name="" size={110} className="logo-chip shadow-2xl" />
         }
 
