@@ -4,7 +4,7 @@ import StepCard from './components/StepCard'
 import ResultsCard from './components/ResultsCard'
 import FooterLegal from './components/FooterLegal'
 import QuickPick from './components/QuickPick'
-import type { Answers, QuickPickMood } from './types'
+import type { Answers } from './types'
 import { scoreBrands, wittyRationale, pickMixer } from './logic/scorer'
 
 const steps = [
@@ -55,8 +55,8 @@ export default function App() {
     setResultIndex(0)
   }
 
-  const handleQuickPick = (mood: QuickPickMood) => {
-    setAnswers({ mood })
+  const handleSkipQuiz = () => {
+    setAnswers({})
     setResultIndex(0)
     setPhase('results')
   }
@@ -88,7 +88,7 @@ export default function App() {
 
       {phase === 'quiz' ? (
         <>
-          {step === 0 && <QuickPick onPick={handleQuickPick} />}
+          {step === 0 && <QuickPick onSkip={handleSkipQuiz} />}
           <ProgressBar step={step + 1} total={total} />
           <div key={step} className="step-enter">
             <StepCard
