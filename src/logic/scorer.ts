@@ -112,6 +112,14 @@ export function scoreBrands(answers: Answers): ScoreResult {
   const scored = brands.map(b => ({ brand: b, ...scoreOne(b, answers) }))
   scored.sort((a, b) => b.score - a.score)
 
+  // No answers given (skip quiz) — shuffle so every session is different
+  if (scored[0]?.score === 0) {
+    for (let i = scored.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [scored[i], scored[j]] = [scored[j], scored[i]]
+    }
+  }
+
   const top = scored[0]
   const second = scored[1]
   const winner = top?.brand
