@@ -30,7 +30,13 @@
       "cool",
       "any"
     ],
-    "logo": "/logos/jameson.svg"
+    "logo": "/logos/jameson.svg",
+    "abv": 40,
+    "cocktails": [
+      "Irish Mule",
+      "Whiskey Sour",
+      "Hot Toddy"
+    ]
   },
   {
     "id": "jack-daniels",
@@ -61,7 +67,13 @@
     "weatherFits": [
       "any"
     ],
-    "logo": "/logos/jack-daniels.svg"
+    "logo": "/logos/jack-daniels.svg",
+    "abv": 40,
+    "cocktails": [
+      "Jack & Coke",
+      "Lynchburg Lemonade",
+      "Tennessee Mule"
+    ]
   },
   {
     "id": "crown-royal",
@@ -93,7 +105,13 @@
       "cool",
       "any"
     ],
-    "logo": "/logos/crown-royal.svg"
+    "logo": "/logos/crown-royal.svg",
+    "abv": 40,
+    "cocktails": [
+      "Crown & Ginger",
+      "Crown Sour",
+      "Canadian Old Fashioned"
+    ]
   },
   {
     "id": "makers-mark",
@@ -126,7 +144,13 @@
       "cold",
       "any"
     ],
-    "logo": "/logos/makers-mark.svg"
+    "logo": "/logos/makers-mark.svg",
+    "abv": 45,
+    "cocktails": [
+      "Old Fashioned",
+      "Maker's Sour",
+      "Paper Plane"
+    ]
   },
   {
     "id": "bulleit-bourbon",
@@ -159,7 +183,13 @@
       "cold",
       "any"
     ],
-    "logo": "/logos/bulleit.svg"
+    "logo": "/logos/bulleit.svg",
+    "abv": 45,
+    "cocktails": [
+      "Boulevardier",
+      "Whiskey Smash",
+      "Gold Rush"
+    ]
   },
   {
     "id": "woodford-reserve",
@@ -190,7 +220,13 @@
       "cool",
       "cold"
     ],
-    "logo": "/logos/woodford-reserve.svg"
+    "logo": "/logos/woodford-reserve.svg",
+    "abv": 43.2,
+    "cocktails": [
+      "Mint Julep",
+      "Classic Manhattan",
+      "Woodford Sour"
+    ]
   },
   {
     "id": "johnnie-walker-black",
@@ -221,7 +257,13 @@
       "cold",
       "any"
     ],
-    "logo": "/logos/jw-black.svg"
+    "logo": "/logos/jw-black.svg",
+    "abv": 40,
+    "cocktails": [
+      "Black & Soda",
+      "Rob Roy",
+      "Penicillin"
+    ]
   },
   {
     "id": "glenfiddich-12",
@@ -250,7 +292,13 @@
       "cool",
       "any"
     ],
-    "logo": "/logos/glenfiddich-12.svg"
+    "logo": "/logos/glenfiddich-12.svg",
+    "abv": 40,
+    "cocktails": [
+      "Glenfiddich Highball",
+      "Scotch Sour",
+      "The Rusty Nail"
+    ]
   },
   {
     "id": "grey-goose",
@@ -284,7 +332,13 @@
       "warm",
       "any"
     ],
-    "logo": "/logos/grey-goose.svg"
+    "logo": "/logos/grey-goose.svg",
+    "abv": 40,
+    "cocktails": [
+      "Cosmopolitan",
+      "French Martini",
+      "Greyhound"
+    ]
   },
   {
     "id": "absolut",
@@ -318,7 +372,13 @@
       "warm",
       "any"
     ],
-    "logo": "/logos/absolut.svg"
+    "logo": "/logos/absolut.svg",
+    "abv": 40,
+    "cocktails": [
+      "Vodka Soda",
+      "Sea Breeze",
+      "Bloody Mary"
+    ]
   },
   {
     "id": "titos",
@@ -351,7 +411,13 @@
       "warm",
       "any"
     ],
-    "logo": "/logos/titos.svg"
+    "logo": "/logos/titos.svg",
+    "abv": 40,
+    "cocktails": [
+      "Moscow Mule",
+      "Tito's Lemonade",
+      "Screwdriver"
+    ]
   },
   {
     "id": "smirnoff",
@@ -383,7 +449,13 @@
       "warm",
       "any"
     ],
-    "logo": "/logos/smirnoff.svg"
+    "logo": "/logos/smirnoff.svg",
+    "abv": 37.5,
+    "cocktails": [
+      "Vodka Cranberry",
+      "Kamikaze",
+      "Smirnoff Mule"
+    ]
   },
   {
     "id": "bombay-sapphire",
@@ -415,7 +487,13 @@
       "hot",
       "warm"
     ],
-    "logo": "/logos/bombay-sapphire.svg"
+    "logo": "/logos/bombay-sapphire.svg",
+    "abv": 47,
+    "cocktails": [
+      "Gin & Tonic",
+      "Negroni",
+      "Bee's Knees"
+    ]
   },
   {
     "id": "tanqueray",
@@ -446,7 +524,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/tanqueray.svg"
+    "logo": "/logos/tanqueray.svg",
+    "abv": 47.3,
+    "cocktails": [
+      "Tanqueray Gimlet",
+      "Tom Collins",
+      "French 75"
+    ]
   },
   {
     "id": "hendricks",
@@ -477,7 +561,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/hendricks.svg"
+    "logo": "/logos/hendricks.svg",
+    "abv": 41.4,
+    "cocktails": [
+      "Cucumber Cooler",
+      "Elderflower Fizz",
+      "Aviation"
+    ]
   },
   {
     "id": "bacardi-superior",
@@ -510,7 +600,13 @@
       "hot",
       "warm"
     ],
-    "logo": "/logos/bacardi.svg"
+    "logo": "/logos/bacardi.svg",
+    "abv": 37.5,
+    "cocktails": [
+      "Mojito",
+      "Daiquiri",
+      "Cuba Libre"
+    ]
   },
   {
     "id": "captain-morgan-spiced",
@@ -540,7 +636,13 @@
     "weatherFits": [
       "any"
     ],
-    "logo": "/logos/captain-morgan.svg"
+    "logo": "/logos/captain-morgan.svg",
+    "abv": 35,
+    "cocktails": [
+      "Captain & Cola",
+      "Spiced Rum Punch",
+      "Captain Sour"
+    ]
   },
   {
     "id": "havana-club-7",
@@ -572,7 +674,13 @@
       "cool",
       "any"
     ],
-    "logo": "/logos/havana-club-7.svg"
+    "logo": "/logos/havana-club-7.svg",
+    "abv": 40,
+    "cocktails": [
+      "El Presidente",
+      "Rum Old Fashioned",
+      "Havana Highball"
+    ]
   },
   {
     "id": "appleton-estate",
@@ -603,7 +711,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/appleton-estate.svg"
+    "logo": "/logos/appleton-estate.svg",
+    "abv": 43,
+    "cocktails": [
+      "Jamaican Mule",
+      "Rum Punch",
+      "Planter's Punch"
+    ]
   },
   {
     "id": "patron-silver",
@@ -635,7 +749,13 @@
       "hot",
       "warm"
     ],
-    "logo": "/logos/patron-silver.svg"
+    "logo": "/logos/patron-silver.svg",
+    "abv": 40,
+    "cocktails": [
+      "Margarita",
+      "Paloma",
+      "Tequila Sunrise"
+    ]
   },
   {
     "id": "don-julio-blanco",
@@ -666,7 +786,13 @@
       "hot",
       "warm"
     ],
-    "logo": "/logos/don-julio-blanco.svg"
+    "logo": "/logos/don-julio-blanco.svg",
+    "abv": 40,
+    "cocktails": [
+      "Tommy's Margarita",
+      "Ranch Water",
+      "Don Julio Spritz"
+    ]
   },
   {
     "id": "casamigos-blanco",
@@ -697,7 +823,13 @@
       "hot",
       "warm"
     ],
-    "logo": "/logos/casamigos-blanco.svg"
+    "logo": "/logos/casamigos-blanco.svg",
+    "abv": 40,
+    "cocktails": [
+      "Spicy Margarita",
+      "Watermelon Margarita",
+      "Casa Paloma"
+    ]
   },
   {
     "id": "jose-cuervo-especial",
@@ -727,7 +859,13 @@
     "weatherFits": [
       "any"
     ],
-    "logo": "/logos/jose-cuervo.svg"
+    "logo": "/logos/jose-cuervo.svg",
+    "abv": 38,
+    "cocktails": [
+      "Classic Margarita",
+      "Tequila Sunrise",
+      "Sangria Punch"
+    ]
   },
   {
     "id": "del-maguey-vida",
@@ -758,7 +896,13 @@
       "warm",
       "cool"
     ],
-    "logo": "/logos/del-maguey-vida.svg"
+    "logo": "/logos/del-maguey-vida.svg",
+    "abv": 42,
+    "cocktails": [
+      "Mezcal Negroni",
+      "Oaxacan Old Fashioned",
+      "Naked & Famous"
+    ]
   },
   {
     "id": "montelobos",
@@ -789,7 +933,13 @@
       "cool",
       "any"
     ],
-    "logo": "/logos/montelobos.svg"
+    "logo": "/logos/montelobos.svg",
+    "abv": 43.2,
+    "cocktails": [
+      "Smoke & Mirrors",
+      "Mezcal Sour",
+      "Montelobos Paloma"
+    ]
   },
   {
     "id": "baileys",
@@ -821,7 +971,13 @@
       "cold",
       "rainy"
     ],
-    "logo": "/logos/baileys.svg"
+    "logo": "/logos/baileys.svg",
+    "abv": 17,
+    "cocktails": [
+      "Baileys on the Rocks",
+      "Mudslide",
+      "Irish Coffee"
+    ]
   },
   {
     "id": "kahlua",
@@ -852,7 +1008,13 @@
       "cold",
       "rainy"
     ],
-    "logo": "/logos/kahlua.svg"
+    "logo": "/logos/kahlua.svg",
+    "abv": 20,
+    "cocktails": [
+      "White Russian",
+      "Espresso Martini",
+      "Black Russian"
+    ]
   },
   {
     "id": "aperol",
@@ -883,7 +1045,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/aperol.svg"
+    "logo": "/logos/aperol.svg",
+    "abv": 11,
+    "cocktails": [
+      "Aperol Spritz",
+      "Paper Plane",
+      "Aperol Sour"
+    ]
   },
   {
     "id": "campari",
@@ -913,7 +1081,13 @@
       "warm",
       "any"
     ],
-    "logo": "/logos/campari.svg"
+    "logo": "/logos/campari.svg",
+    "abv": 25,
+    "cocktails": [
+      "Negroni",
+      "Campari Spritz",
+      "Americano"
+    ]
   },
   {
     "id": "jägermeister",
@@ -943,7 +1117,13 @@
     "weatherFits": [
       "any"
     ],
-    "logo": "/logos/jagermeister.svg"
+    "logo": "/logos/jagermeister.svg",
+    "abv": 35,
+    "cocktails": [
+      "Jaegerbomb",
+      "Jaeger Mule",
+      "Black Sombrero"
+    ]
   },
   {
     "id": "cointreau",
@@ -974,7 +1154,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/cointreau.svg"
+    "logo": "/logos/cointreau.svg",
+    "abv": 40,
+    "cocktails": [
+      "Margarita",
+      "Cosmopolitan",
+      "Sidecar"
+    ]
   },
   {
     "id": "strongbow",
@@ -1004,7 +1190,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/strongbow.svg"
+    "logo": "/logos/strongbow.svg",
+    "abv": 5,
+    "cocktails": [
+      "Snakebite",
+      "Strongbow & Black",
+      "Cider Shandy"
+    ]
   },
   {
     "id": "somersby",
@@ -1034,7 +1226,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/somersby.svg"
+    "logo": "/logos/somersby.svg",
+    "abv": 4.5,
+    "cocktails": [
+      "Cider Spritz",
+      "Somersby Sour",
+      "Apple Shandy"
+    ]
   },
   {
     "id": "bud-light",
@@ -1065,7 +1263,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/bud-light.svg"
+    "logo": "/logos/bud-light.svg",
+    "abv": 4.2,
+    "cocktails": [
+      "Michelada",
+      "Beer Shandy",
+      "Bud Light Chelada"
+    ]
   },
   {
     "id": "heineken",
@@ -1095,7 +1299,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/heineken.svg"
+    "logo": "/logos/heineken.svg",
+    "abv": 5,
+    "cocktails": [
+      "Shandy",
+      "Michelada",
+      "Radler"
+    ]
   },
   {
     "id": "corona-extra",
@@ -1124,7 +1334,13 @@
       "hot",
       "warm"
     ],
-    "logo": "/logos/corona.svg"
+    "logo": "/logos/corona.svg",
+    "abv": 4.6,
+    "cocktails": [
+      "Corona Sunrise",
+      "Mexican Mule",
+      "Chelada"
+    ]
   },
   {
     "id": "guinness-draught",
@@ -1153,7 +1369,13 @@
       "cool",
       "cold"
     ],
-    "logo": "/logos/guinness.svg"
+    "logo": "/logos/guinness.svg",
+    "abv": 4.2,
+    "cocktails": [
+      "Black & Tan",
+      "Guinness Float",
+      "Irish Car Bomb"
+    ]
   },
   {
     "id": "alberta-premium",
@@ -1184,7 +1406,13 @@
       "cold",
       "any"
     ],
-    "logo": "/logos/alberta-premium.svg"
+    "logo": "/logos/alberta-premium.svg",
+    "abv": 40,
+    "cocktails": [
+      "Rye & Ginger",
+      "Alberta Sour",
+      "Prairie Old Fashioned"
+    ]
   },
   {
     "id": "forty-creek",
@@ -1215,7 +1443,13 @@
       "cool",
       "any"
     ],
-    "logo": "/logos/forty-creek.svg"
+    "logo": "/logos/forty-creek.svg",
+    "abv": 40,
+    "cocktails": [
+      "Forty Creek Old Fashioned",
+      "Canadian Sour",
+      "Creek & Cola"
+    ]
   },
   {
     "id": "diplomatico-reserva",
@@ -1245,7 +1479,13 @@
       "cool",
       "cold"
     ],
-    "logo": "/logos/diplomatico.svg"
+    "logo": "/logos/diplomatico.svg",
+    "abv": 47,
+    "cocktails": [
+      "Rum Old Fashioned",
+      "El Presidente",
+      "Diplomatico Sour"
+    ]
   },
   {
     "id": "herradura-reposado",
@@ -1275,7 +1515,13 @@
       "warm",
       "cool"
     ],
-    "logo": "/logos/herradura-reposado.svg"
+    "logo": "/logos/herradura-reposado.svg",
+    "abv": 40,
+    "cocktails": [
+      "Margarita Reposado",
+      "Herradura Sour",
+      "Reposado Paloma"
+    ]
   },
   {
     "id": "el-jimador-reposado",
@@ -1305,7 +1551,13 @@
     "weatherFits": [
       "any"
     ],
-    "logo": "/logos/el-jimador.svg"
+    "logo": "/logos/el-jimador.svg",
+    "abv": 40,
+    "cocktails": [
+      "El Diablo",
+      "Jalisco Sour",
+      "Sangrita Chaser"
+    ]
   },
   {
     "id": "empress-1908",
@@ -1336,7 +1588,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/empress-1908.svg"
+    "logo": "/logos/empress-1908.svg",
+    "abv": 42.5,
+    "cocktails": [
+      "Empress G&T",
+      "Lavender Gin Fizz",
+      "Empress Sour"
+    ]
   },
   {
     "id": "ciroc",
@@ -1367,7 +1625,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/ciroc.svg"
+    "logo": "/logos/ciroc.svg",
+    "abv": 40,
+    "cocktails": [
+      "Ciroc Spritz",
+      "Grape Crush",
+      "Ciroc Martini"
+    ]
   },
   {
     "id": "laphroaig-10",
@@ -1396,7 +1660,13 @@
       "cold",
       "rainy"
     ],
-    "logo": "/logos/laphroaig-10.svg"
+    "logo": "/logos/laphroaig-10.svg",
+    "abv": 43,
+    "cocktails": [
+      "Penicillin",
+      "Smoky Sour",
+      "Laphroaig Highball"
+    ]
   },
   {
     "id": "wild-turkey-101",
@@ -1426,7 +1696,13 @@
       "cool",
       "cold"
     ],
-    "logo": "/logos/wild-turkey-101.svg"
+    "logo": "/logos/wild-turkey-101.svg",
+    "abv": 50.5,
+    "cocktails": [
+      "Rye Manhattan",
+      "Wild Turkey Sour",
+      "Kentucky Buck"
+    ]
   },
   {
     "id": "bulleit-rye",
@@ -1457,7 +1733,13 @@
       "cool",
       "any"
     ],
-    "logo": "/logos/bulleit-rye.svg"
+    "logo": "/logos/bulleit-rye.svg",
+    "abv": 45,
+    "cocktails": [
+      "Whiskey Sour",
+      "Vieux Carre",
+      "Rye Old Fashioned"
+    ]
   },
   {
     "id": "kraken-black-spiced",
@@ -1486,7 +1768,13 @@
     "weatherFits": [
       "any"
     ],
-    "logo": "/logos/kraken.svg"
+    "logo": "/logos/kraken.svg",
+    "abv": 47,
+    "cocktails": [
+      "Dark & Stormy",
+      "Kraken & Cola",
+      "Spiced Rum Punch"
+    ]
   },
   {
     "id": "casamigos-anejo",
@@ -1516,7 +1804,13 @@
       "cool",
       "any"
     ],
-    "logo": "/logos/casamigos-anejo.svg"
+    "logo": "/logos/casamigos-anejo.svg",
+    "abv": 40,
+    "cocktails": [
+      "Anejo Old Fashioned",
+      "Cazuela",
+      "Anejo Sour"
+    ]
   },
   {
     "id": "averna",
@@ -1546,7 +1840,13 @@
       "cool",
       "any"
     ],
-    "logo": "/logos/averna.svg"
+    "logo": "/logos/averna.svg",
+    "abv": 29,
+    "cocktails": [
+      "Averna Spritz",
+      "Black Manhattan",
+      "Averna Sour"
+    ]
   },
   {
     "id": "beefeater",
@@ -1576,7 +1876,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/beefeater.svg"
+    "logo": "/logos/beefeater.svg",
+    "abv": 40,
+    "cocktails": [
+      "Beefeater G&T",
+      "Pink Gin Fizz",
+      "Beefeater Martini"
+    ]
   },
   {
     "id": "polar-ice",
@@ -1607,7 +1913,13 @@
       "warm",
       "any"
     ],
-    "logo": "/logos/polar-ice.svg"
+    "logo": "/logos/polar-ice.svg",
+    "abv": 40,
+    "cocktails": [
+      "Vodka Lemonade",
+      "Cape Codder",
+      "Dirty Martini"
+    ]
   },
   {
     "id": "macallan-12",
@@ -1636,7 +1948,13 @@
       "cool",
       "cold"
     ],
-    "logo": "/logos/macallan-12.svg"
+    "logo": "/logos/macallan-12.svg",
+    "abv": 40,
+    "cocktails": [
+      "Scotch & Soda",
+      "Highland Sour",
+      "Macallan Manhattan"
+    ]
   },
   {
     "id": "high-west-double-rye",
@@ -1667,7 +1985,13 @@
       "cool",
       "any"
     ],
-    "logo": "/logos/high-west-double-rye.svg"
+    "logo": "/logos/high-west-double-rye.svg",
+    "abv": 46,
+    "cocktails": [
+      "Vieux Carre",
+      "Rye Manhattan",
+      "Paper Plane"
+    ]
   },
   {
     "id": "malibu",
@@ -1698,7 +2022,13 @@
       "hot",
       "warm"
     ],
-    "logo": "/logos/malibu.svg"
+    "logo": "/logos/malibu.svg",
+    "abv": 21,
+    "cocktails": [
+      "Malibu Sunset",
+      "Pina Colada",
+      "Coconut Crush"
+    ]
   },
   {
     "id": "olmeca-altos-plata",
@@ -1729,7 +2059,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/altos-plata.svg"
+    "logo": "/logos/altos-plata.svg",
+    "abv": 40,
+    "cocktails": [
+      "Paloma",
+      "Altos Margarita",
+      "Tequila Spritz"
+    ]
   },
   {
     "id": "belvedere",
@@ -1760,7 +2096,13 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/belvedere.svg"
+    "logo": "/logos/belvedere.svg",
+    "abv": 40,
+    "cocktails": [
+      "Belvedere Martini",
+      "Espresso Martini",
+      "Belvedere Smash"
+    ]
   },
   {
     "id": "triple-sec",
@@ -1791,6 +2133,12 @@
       "warm",
       "hot"
     ],
-    "logo": "/logos/triple-sec.svg"
+    "logo": "/logos/triple-sec.svg",
+    "abv": 30,
+    "cocktails": [
+      "Margarita",
+      "Cosmopolitan",
+      "Long Island Iced Tea"
+    ]
   }
 ]

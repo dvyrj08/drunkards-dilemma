@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import type { Brand } from '../types'
+import ConvinceMe from './ConvinceMe'
+import DrinkRecipe from './DrinkRecipe'
+import CocktailChips from './CocktailChips'
 import BrandLogo from './BrandLogo'
 import { logoPropsFor } from '../lib/logoMap'
 
@@ -23,7 +26,7 @@ const catLabel: Partial<Record<NonNullable<Brand['category']>, string>> = {
 }
 
 export default function ResultsCard({
-  brand, mixer, rationale, onRetake, alts, confidence
+  brand, mixer, rationale, onRetake, alts, confidence, onReroll, canReroll
 }: {
   brand?: Brand
   mixer: string
@@ -31,23 +34,25 @@ export default function ResultsCard({
   onRetake: () => void
   alts: Brand[]
   confidence: number
+  onReroll: () => void
+  canReroll: boolean
 }) {
   const grad = brand ? catClass[brand.category] : 'bg-white/10'
   const [copied, setCopied] = useState(false)
 
   return (
     <div className="rounded-2xl overflow-hidden shadow-lg">
-      {/* ── Hero: big centered brand logo + name + tagline ── */}
+      {/* ── Hero ── */}
       <div className={`${grad} px-5 pt-8 pb-6 flex flex-col items-center text-center gap-3`}>
         {brand?.category && (
           <span className="category-pill self-end -mt-4">{catLabel[brand.category] ?? brand.category}</span>
         )}
-        <BrandLogo
-          {...logoPropsFor(brand?.id)}
-          name={brand?.displayName || ''}
-          size={110}
-          className="logo-chip shadow-2xl"
-        />
+
+        {brand
+          ? <ConvinceMe brand={brand} />
+          : <BrandLogo name="" size={110} className="logo-chip shadow-2xl" />
+        }
+
         <div>
           <h2 className="text-3xl font-extrabold drop-shadow-sm">{brand?.displayName || 'No Match Found'}</h2>
           <p className="text-white/85 text-sm mt-1 max-w-xs mx-auto">{rationale}</p>
@@ -60,6 +65,12 @@ export default function ResultsCard({
           <p className="text-sm text-white/60">Mixer</p>
           <p className="text-lg font-semibold">{mixer}</p>
         </div>
+
+        {brand && <DrinkRecipe brand={brand} mixer={mixer} />}
+
+        {brand && brand.cocktails?.length > 0 && (
+          <CocktailChips cocktails={brand.cocktails} />
+        )}
 
         {alts.length > 0 && (
           <div>
@@ -80,6 +91,13 @@ export default function ResultsCard({
 
         <div className="flex gap-3">
           <button className="btn btn-primary" onClick={onRetake}>Retake</button>
+          <button
+            className="btn flex-1"
+            onClick={onReroll}
+            disabled={!canReroll}
+          >
+            Not feeling it →
+          </button>
           <button
             className="btn"
             onClick={async () => {

@@ -3,8 +3,9 @@ import ProgressBar from './components/ProgressBar'
 import StepCard from './components/StepCard'
 import ResultsCard from './components/ResultsCard'
 import FooterLegal from './components/FooterLegal'
-import type { Answers } from './types'
-import { scoreBrands, wittyRationale } from './logic/scorer'
+import QuickPick from './components/QuickPick'
+import type { Answers, QuickPickMood } from './types'
+import { scoreBrands, wittyRationale, pickMixer } from './logic/scorer'
 
 const steps = [
   { key: 'mood',      title: 'Mood right now?',        options: ['radiant','chill','spicy','savage','classy','adventurous','melancholy'] },
@@ -21,9 +22,10 @@ type StepKey = typeof steps[number]['key']
 type Phase = 'quiz' | 'results'
 
 export default function App() {
-  const [phase, setPhase]     = useState<Phase>('quiz')
-  const [step, setStep]       = useState(0)
-  const [answers, setAnswers] = useState<Answers>({})
+  const [phase, setPhase]       = useState<Phase>('quiz')
+  const [step, setStep]         = useState(0)
+  const [answers, setAnswers]   = useState<Answers>({})
+  const [resultIndex, setResultIndex] = useState(0)
 
   const total   = steps.length
   const current = steps[step]
@@ -50,9 +52,20 @@ export default function App() {
     setAnswers({})
     setStep(0)
     setPhase('quiz')
+    setResultIndex(0)
   }
 
-  const { winner, mixer, alts, confidence } = useMemo(() => scoreBrands(answers), [answers])
+  const handleQuickPick = (mood: QuickPickMood) => {
+    setAnswers({ mood })
+    setResultIndex(0)
+    setPhase('results')
+  }
+
+  const reroll = () => setResultIndex(i => Math.min(i + 1, 4))
+
+  const { ranked, alts, confidence } = useMemo(() => scoreBrands(answers), [answers])
+  const winner = ranked[resultIndex]?.brand
+  const mixer  = useMemo(() => pickMixer(winner, answers), [winner, answers])
 
   const rationale = useMemo(
     () => winner
@@ -75,6 +88,7 @@ export default function App() {
 
       {phase === 'quiz' ? (
         <>
+          {step === 0 && <QuickPick onPick={handleQuickPick} />}
           <ProgressBar step={step + 1} total={total} />
           <div key={step} className="step-enter">
             <StepCard
@@ -107,6 +121,8 @@ export default function App() {
           alts={alts}
           confidence={confidence}
           onRetake={retake}
+          onReroll={reroll}
+          canReroll={resultIndex < 4}
         />
       )}
 

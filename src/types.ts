@@ -9,8 +9,13 @@ export type Brand = {
   mixers: string[];
   occasions: string[];
   weatherFits: string[];
+  abv: number;
+  cocktails: string[];
   logo?: string;
 }
+
+export type RankedBrand = { brand: Brand; score: number; maxScore: number }
+export type QuickPickMood = 'radiant'|'chill'|'spicy'|'savage'|'classy'|'adventurous'|'melancholy'
 
 export type Answers = {
   mood?: string;

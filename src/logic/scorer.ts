@@ -1,4 +1,4 @@
-import type { Brand, Answers } from '../types'
+import type { Brand, Answers, RankedBrand } from '../types'
 import brandsRaw from '../data/brands.json'
 
 const brands = brandsRaw as Brand[]
@@ -93,6 +93,18 @@ export type ScoreResult = {
   mixer: string
   alts: Brand[]
   confidence: number // 0–100
+  ranked: RankedBrand[]
+}
+
+export function pickMixer(winner: Brand | undefined, answers: Answers): string {
+  let mixer = 'soda water'
+  if (answers.mixerMood) {
+    const allowed = mixerBuckets[answers.mixerMood] ?? []
+    mixer = winner?.mixers.find(m => allowed.includes(m)) ?? winner?.mixers[0] ?? mixer
+  } else if (winner?.mixers.length) {
+    mixer = winner.mixers[0]
+  }
+  return mixer
 }
 
 export function scoreBrands(answers: Answers): ScoreResult {
@@ -109,13 +121,7 @@ export function scoreBrands(answers: Answers): ScoreResult {
     ? Math.min(100, Math.round(((top.score - (second?.score ?? 0)) / top.score) * 100))
     : 0
 
-  let mixer = 'soda water'
-  if (answers.mixerMood) {
-    const allowed = mixerBuckets[answers.mixerMood] ?? []
-    mixer = winner?.mixers.find(m => allowed.includes(m)) ?? winner?.mixers[0] ?? mixer
-  } else if (winner?.mixers.length) {
-    mixer = winner.mixers[0]
-  }
+  const mixer = pickMixer(winner, answers)
 
   // Category-diverse alts: prefer different categories first, fill from top scores
   const candidates = scored.slice(1, 6)
@@ -130,7 +136,7 @@ export function scoreBrands(answers: Answers): ScoreResult {
     if (!alts.includes(c.brand)) alts.push(c.brand)
   }
 
-  return { winner, mixer, alts, confidence }
+  return { winner, mixer, alts, confidence, ranked: scored }
 }
 
 function rnd<T>(arr: T[]): T { return arr[Math.floor(Math.random() * arr.length)] }
