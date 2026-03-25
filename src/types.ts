@@ -1,7 +1,7 @@
 export type Brand = {
   id: string;
   displayName: string;
-  category: 'whiskey'|'bourbon'|'scotch'|'vodka'|'gin'|'rum'|'tequila'|'mezcal'|'liqueur'|'cider'|'beer';
+  category: 'whiskey'|'tennessee'|'bourbon'|'scotch'|'vodka'|'gin'|'rum'|'tequila'|'mezcal'|'liqueur'|'cider'|'beer';
   flavorNotes: string[];
   vibeTags: string[];
   strength: 'light'|'medium'|'strong';

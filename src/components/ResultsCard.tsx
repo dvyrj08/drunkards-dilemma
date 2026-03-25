@@ -4,17 +4,22 @@ import BrandLogo from './BrandLogo'
 import { logoPropsFor } from '../lib/logoMap'
 
 const catClass: Record<NonNullable<Brand['category']>, string> = {
-  whiskey: 'grad-whiskey',
-  bourbon: 'grad-bourbon',
-  scotch:  'grad-scotch',
-  vodka:   'grad-vodka',
-  gin:     'grad-gin',
-  rum:     'grad-rum',
-  tequila: 'grad-tequila',
-  mezcal:  'grad-mezcal',
-  liqueur: 'grad-liqueur',
-  cider:   'grad-cider',
-  beer:    'grad-beer',
+  whiskey:   'grad-whiskey',
+  tennessee: 'grad-whiskey',
+  bourbon:   'grad-bourbon',
+  scotch:    'grad-scotch',
+  vodka:     'grad-vodka',
+  gin:       'grad-gin',
+  rum:       'grad-rum',
+  tequila:   'grad-tequila',
+  mezcal:    'grad-mezcal',
+  liqueur:   'grad-liqueur',
+  cider:     'grad-cider',
+  beer:      'grad-beer',
+}
+
+const catLabel: Partial<Record<NonNullable<Brand['category']>, string>> = {
+  tennessee: 'Tennessee Whiskey',
 }
 
 export default function ResultsCard({
@@ -35,7 +40,7 @@ export default function ResultsCard({
       {/* ── Hero: big centered brand logo + name + tagline ── */}
       <div className={`${grad} px-5 pt-8 pb-6 flex flex-col items-center text-center gap-3`}>
         {brand?.category && (
-          <span className="category-pill self-end -mt-4">{brand.category}</span>
+          <span className="category-pill self-end -mt-4">{catLabel[brand.category] ?? brand.category}</span>
         )}
         <BrandLogo
           {...logoPropsFor(brand?.id)}
@@ -58,7 +63,7 @@ export default function ResultsCard({
 
         {alts.length > 0 && (
           <div>
-            <p className="text-sm text-white/60 mb-2">Also try</p>
+            <p className="text-sm text-white/60 mb-2">{confidence < 40 ? 'Close race — worth exploring:' : 'Want something different?'}</p>
             <div className="flex flex-wrap gap-2">
               {alts.map(a => {
                 const lp = logoPropsFor(a.id)

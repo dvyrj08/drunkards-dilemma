@@ -13,7 +13,7 @@ const DOMAIN_MAP: Record<string, string> = {
   "bombay-sapphire": "bombaysapphire.com",
   "bud-light": "budweiser.com",
   "bulleit-bourbon": "bulleit.com",
-  "bullet-rye": "bulleit.com",
+  "bulleit-rye": "bulleit.com",
   "campari": "campari.com",
   "captain-morgan-spiced": "captainmorgan.com",
   "casamigos-anejo": "casamigos.com",
@@ -56,6 +56,8 @@ const DOMAIN_MAP: Record<string, string> = {
   "strongbow": "strongbow.com",
   "tanqueray": "tanqueray.com",
   "titos": "titosvodka.com",
+  "triple-sec": "cointreau.com",
+  "polar-ice": "polarice.com",
   "wild-turkey-101": "wildturkeybourbon.com",
   "woodford-reserve": "woodfordreserve.com",
 };

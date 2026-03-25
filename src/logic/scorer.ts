@@ -26,19 +26,19 @@ function scoreOne(b: Brand, answers: Answers): { score: number; maxScore: number
   let maxScore = 0
 
   if (answers.budget !== undefined) {
-    maxScore += 3
-    if (b.priceTier === answers.budget) score += 3
+    maxScore += 2
+    if (b.priceTier === answers.budget) score += 2
   }
 
   if (answers.strength !== undefined) {
-    maxScore += 3
-    if (b.strength === answers.strength) score += 3
+    maxScore += 2
+    if (b.strength === answers.strength) score += 2
   }
 
   if (answers.mixerMood !== undefined) {
-    maxScore += 3
+    maxScore += 2
     const allowed = mixerBuckets[answers.mixerMood] ?? []
-    if (b.mixers.some(m => allowed.includes(m))) score += 3
+    if (b.mixers.some(m => allowed.includes(m))) score += 2
   }
 
   if (answers.flavor !== undefined) {
@@ -56,7 +56,8 @@ function scoreOne(b: Brand, answers: Answers): { score: number; maxScore: number
 
   if (answers.weather !== undefined) {
     maxScore += 2
-    if (b.weatherFits.includes(answers.weather) || b.weatherFits.includes('any')) score += 2
+    if (b.weatherFits.includes(answers.weather)) score += 2
+    else if (b.weatherFits.includes('any')) score += 1
   }
 
   if (answers.mood !== undefined) {
@@ -132,120 +133,118 @@ export function wittyRationale(ans: Answers, brand: Brand): string {
 
   if (mood && occasion) {
     pool.push(
-      `${name} saw "${mood}" and "${occasion}" and said "that's my cue."`,
-      `A ${mood} person at a ${occasion} ordered ${name}. You're that person.`,
-      `${mood} + ${occasion} is a specific vibe. ${name} is the specific answer.`,
-      `${name} doesn't ask questions. It just shows up for ${mood} energy at a ${occasion}.`,
-      `You walked into a ${occasion} feeling ${mood}. ${name} was already waiting.`,
+      `${mood} + ${occasion} is a specific combo. ${name} matched it best.`,
+      `A ${mood} person at a ${occasion} tends to land on ${name}. The pattern checks out.`,
+      `${mood} energy at a ${occasion} pointed pretty clearly at ${name}.`,
+      `${name} tends to fit ${mood} + ${occasion} better than most alternatives.`,
     )
   }
 
   if (flavor && mood) {
     pool.push(
-      `${flavor} flavor, ${mood} energy. ${name} clocked both without breaking a sweat.`,
-      `You said ${flavor}. You said ${mood}. ${name} said "obviously."`,
-      `${name} is what ${mood} people reach for when they want ${flavor}. It's not complicated.`,
-      `${flavor} and ${mood} sounds like a personality. ${name} is the drink version of it.`,
+      `${flavor} flavor and ${mood} energy. ${name} scored highest on both.`,
+      `${mood} and ${flavor} together? ${name} is usually the answer to that combination.`,
+      `${name} tends to suit ${mood} people who want ${flavor}. Fits your profile.`,
+      `${flavor} + ${mood} is a specific ask. ${name} came closest.`,
     )
   }
 
   if (place && occasion) {
     pool.push(
-      `${name} at a ${place} ${occasion}? That's not a recommendation, that's a law.`,
-      `${place} + ${occasion} is a formula. ${name} is the answer.`,
-      `Everyone at a ${place} ${occasion} eventually ends up with ${name}. Skip the journey.`,
-      `You picked ${place} and ${occasion}. ${name} picked you.`,
+      `${name} tends to work well at a ${place} ${occasion}. Strong overlap with your answers.`,
+      `${place} + ${occasion} narrowed it down pretty fast. ${name} came out on top.`,
+      `For a ${place} ${occasion}, ${name} scored higher than any alternative.`,
     )
   }
 
   if (weather && flavor) {
     pool.push(
-      `${weather} weather and ${flavor} notes? ${name} is embarrassingly on-theme.`,
-      `${name} was literally designed for ${weather} + ${flavor}. Or at least it should've been.`,
-      `${weather} outside, ${flavor} inside — ${name} bridges that gap with zero effort.`,
+      `${weather} weather and ${flavor} notes tend to point toward ${name}.`,
+      `${name} fits ${weather} conditions and ${flavor} preference better than the competition.`,
+      `${weather} outside, ${flavor} preference — ${name} matched both.`,
     )
   }
 
   if (mood && place) {
     pool.push(
-      `Feeling ${mood} at a ${place}? ${name} is the move before you even sit down.`,
-      `${name} matches ${mood} energy in a ${place} setting. The algorithm doesn't lie.`,
-      `A ${mood} person in a ${place} reaches for ${name}. Every time.`,
+      `${mood} energy in a ${place} setting. ${name} tends to fit that combination.`,
+      `${name} scored well for ${mood} vibes in a ${place}. Hard to argue with the numbers.`,
+      `${mood} at a ${place} usually points somewhere like ${name}.`,
     )
   }
 
   if (occasion && flavor) {
     pool.push(
-      `${flavor} flavors at a ${occasion} hit different. ${name} knows this.`,
-      `You wanted ${flavor} for a ${occasion}. ${name} RSVPed before you asked.`,
-      `${name} is the ${flavor} choice that also makes sense for a ${occasion}. Rare combo.`,
+      `${flavor} flavors at a ${occasion} — ${name} matched that pairing well.`,
+      `${name} fits ${flavor} preference at a ${occasion} better than most on the list.`,
+      `${occasion} + ${flavor} is a fairly specific ask. ${name} came closest.`,
     )
   }
 
   if (strength) {
     pool.push(
-      `You asked for ${strength}. ${name} doesn't exaggerate. It delivers exactly that.`,
-      `${strength} and ${name} in the same sentence is just redundant. In a good way.`,
-      `${name} hits ${strength} like it was born to. Because it was.`,
+      `You wanted ${strength}. ${name} fits that well without overdelivering.`,
+      `${name} sits in the ${strength} range and scored well across your other answers too.`,
+      `${strength} strength plus everything else you picked. ${name} checked the most boxes.`,
     )
   }
 
   if (budget) {
     pool.push(
-      `${budget === 'budget' ? `${name} doesn't make you choose between broke and good taste.` :
-        budget === 'premium' ? `You said premium. ${name} didn't flinch.` :
-        `Mid-range and ${name}? Honestly the sweet spot.`}`,
+      `${budget === 'budget' ? `${name} sits in the budget range without sacrificing much.` :
+        budget === 'premium' ? `You went premium. ${name} is a solid pick at that tier.` :
+        `Mid-range and ${name} is a reasonable combo — good value without compromise.`}`,
     )
   }
 
   if (weather && mood) {
     pool.push(
-      `${weather} weather brings out the ${mood} in people. ${name} brings out the best in both.`,
-      `${mood} in ${weather} weather is a specific kind of mood. ${name} gets it.`,
+      `${weather} weather tends to pair with ${mood} energy in a specific way. ${name} fit both.`,
+      `${mood} in ${weather} weather is a recognizable pattern. ${name} matches it well.`,
     )
   }
 
   if (mood) {
     pool.push(
-      `${mood} was your vibe. ${name} matched it without being asked.`,
-      `The data says ${name}. The ${mood} energy agrees.`,
-      `${name} is what happens when ${mood} meets a good bottle.`,
+      `${mood} was your vibe. ${name} scored highest for that.`,
+      `${name} came out on top for ${mood} energy. Make of that what you will.`,
+      `${name} matched ${mood} best out of everything in the list.`,
     )
   }
 
   if (occasion) {
     pool.push(
-      `There's a right drink for a ${occasion}. This is it.`,
-      `${name} has been the answer to "${occasion}" since before you asked.`,
-      `A ${occasion} without ${name} is just an event. Think about it.`,
+      `${name} tends to work well for a ${occasion}. Scored well across your answers.`,
+      `${name} comes up often for ${occasion} — scored highest for yours too.`,
+      `For a ${occasion}, ${name} fit the profile better than the alternatives.`,
     )
   }
 
   if (flavor) {
     pool.push(
-      `You wanted ${flavor}. ${name} doesn't mess around with that.`,
-      `${flavor} was the brief. ${name} aced it.`,
-      `If ${flavor} is what you're after, ${name} is the shortest path there.`,
+      `You wanted ${flavor}. ${name} matched that best.`,
+      `${flavor} was the preference. ${name} fit it along with your other answers.`,
+      `${name} leans ${flavor} and scored well overall. Good fit.`,
     )
   }
 
   if (place) {
     pool.push(
-      `${name} fits a ${place} like it was designed for it.`,
-      `${place} crowd tends to end up with ${name}. Now you know why.`,
+      `${name} tends to suit a ${place} setting. Scored well for your answers.`,
+      `${place} crowd generally leans toward ${name}. Your other answers agreed.`,
     )
   }
 
-  // Always-valid fallbacks with personality
+  // Always-valid fallbacks
   pool.push(
     `${name} scored highest. You can argue with the vibes, not the math.`,
-    `The quiz had a lot of options. ${name} won anyway.`,
-    `${name}. Everything else was a close second.`,
-    `Out of everything on the shelf, ${name} fit your answers best. We checked twice.`,
-    `Turns out your taste is ${name}. Could be worse.`,
-    `${name} kept showing up across every answer you gave. Hard to ignore that.`,
-    `Your answers basically spelled out ${name}. So here we are.`,
-    `${name} won the vote. Unanimously, actually.`,
+    `The quiz had a lot of options. ${name} scored best for yours.`,
+    `${name} came out ahead. Everything else was close but not quite.`,
+    `Out of everything on the shelf, ${name} fit your answers best.`,
+    `Your answers pointed toward ${name} more than anything else. So here we are.`,
+    `${name} kept scoring across every dimension you answered. Hard to ignore that.`,
+    `Not every quiz has a clear winner. This one did. It's ${name}.`,
+    `${name} won the points tally. Unanimously, actually.`,
   )
 
   return rnd(pool)
