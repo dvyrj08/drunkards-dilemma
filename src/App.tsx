@@ -61,9 +61,8 @@ export default function App() {
     setPhase('results')
   }
 
-  const reroll = () => setResultIndex(i => Math.min(i + 1, 4))
-
   const { ranked, alts, confidence } = useMemo(() => scoreBrands(answers), [answers])
+  const reroll = () => setResultIndex(i => (i + 1) % ranked.length)
   const winner = ranked[resultIndex]?.brand
   const mixer  = useMemo(() => pickMixer(winner, answers), [winner, answers])
 
@@ -122,7 +121,6 @@ export default function App() {
           confidence={confidence}
           onRetake={retake}
           onReroll={reroll}
-          canReroll={resultIndex < 4}
         />
       )}
 

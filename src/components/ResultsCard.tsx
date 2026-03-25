@@ -26,7 +26,7 @@ const catLabel: Partial<Record<NonNullable<Brand['category']>, string>> = {
 }
 
 export default function ResultsCard({
-  brand, mixer, rationale, onRetake, alts, confidence, onReroll, canReroll
+  brand, mixer, rationale, onRetake, alts, confidence, onReroll
 }: {
   brand?: Brand
   mixer: string
@@ -35,7 +35,6 @@ export default function ResultsCard({
   alts: Brand[]
   confidence: number
   onReroll: () => void
-  canReroll: boolean
 }) {
   const grad = brand ? catClass[brand.category] : 'bg-white/10'
   const [copied, setCopied] = useState(false)
@@ -91,11 +90,7 @@ export default function ResultsCard({
 
         <div className="flex gap-3">
           <button className="btn btn-primary" onClick={onRetake}>Retake</button>
-          <button
-            className="btn flex-1"
-            onClick={onReroll}
-            disabled={!canReroll}
-          >
+          <button className="btn flex-1" onClick={onReroll}>
             Not feeling it →
           </button>
           <button

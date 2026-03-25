@@ -96,15 +96,16 @@ export type ScoreResult = {
   ranked: RankedBrand[]
 }
 
+function rndFrom<T>(arr: T[]): T { return arr[Math.floor(Math.random() * arr.length)] }
+
 export function pickMixer(winner: Brand | undefined, answers: Answers): string {
-  let mixer = 'soda water'
+  if (!winner?.mixers.length) return 'soda water'
   if (answers.mixerMood) {
     const allowed = mixerBuckets[answers.mixerMood] ?? []
-    mixer = winner?.mixers.find(m => allowed.includes(m)) ?? winner?.mixers[0] ?? mixer
-  } else if (winner?.mixers.length) {
-    mixer = winner.mixers[0]
+    const matching = winner.mixers.filter(m => allowed.includes(m))
+    return matching.length ? rndFrom(matching) : winner.mixers[0]
   }
-  return mixer
+  return rndFrom(winner.mixers)
 }
 
 export function scoreBrands(answers: Answers): ScoreResult {
