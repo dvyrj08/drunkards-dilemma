@@ -17,56 +17,58 @@ const catClass: Record<NonNullable<Brand['category']>, string> = {
   beer:    'grad-beer',
 }
 
-
 export default function ResultsCard({
   brand, mixer, rationale, onRetake, alts, confidence
 }: {
   brand?: Brand
   mixer: string
   rationale: string
-  onRetake: ()=>void
+  onRetake: () => void
   alts: Brand[]
   confidence: number
 }) {
   const grad = brand ? catClass[brand.category] : 'bg-white/10'
   const [copied, setCopied] = useState(false)
-  return (
-    <div className={`rounded-2xl overflow-hidden shadow-lg`}>
-      <div className={`p-5 ${grad}`}>
-        <div className="flex items-start justify-between">
-          <div className="brand-lockup">
-       <BrandLogo
-  {...logoPropsFor(brand?.id)}
-  name={brand?.displayName || ''}
-  size={80}
-  className="logo-chip"
-/>
 
-            <div>
-              <h2 className="text-2xl font-extrabold drop-shadow-sm">{brand?.displayName || 'No Match Found'}</h2>
-              <p className="text-white/90">{rationale}</p>
-            </div>
-          </div>
-          {brand?.category && <span className="category-pill">{brand.category}</span>}
+  return (
+    <div className="rounded-2xl overflow-hidden shadow-lg">
+      {/* ── Hero: big centered brand logo + name + tagline ── */}
+      <div className={`${grad} px-5 pt-8 pb-6 flex flex-col items-center text-center gap-3`}>
+        {brand?.category && (
+          <span className="category-pill self-end -mt-4">{brand.category}</span>
+        )}
+        <BrandLogo
+          {...logoPropsFor(brand?.id)}
+          name={brand?.displayName || ''}
+          size={110}
+          className="logo-chip shadow-2xl"
+        />
+        <div>
+          <h2 className="text-3xl font-extrabold drop-shadow-sm">{brand?.displayName || 'No Match Found'}</h2>
+          <p className="text-white/85 text-sm mt-1 max-w-xs mx-auto">{rationale}</p>
         </div>
       </div>
 
+      {/* ── Details ── */}
       <div className="card !rounded-t-none space-y-4">
         <div className="bg-white/5 rounded-xl p-4">
-          <p className="text-sm text-white/80">Mixer</p>
+          <p className="text-sm text-white/60">Mixer</p>
           <p className="text-lg font-semibold">{mixer}</p>
         </div>
 
         {alts.length > 0 && (
           <div>
-            <p className="text-sm text-white/80 mb-2">Also try</p>
+            <p className="text-sm text-white/60 mb-2">Also try</p>
             <div className="flex flex-wrap gap-2">
-              {alts.map(a => { const lp = logoPropsFor(a.id); return (
-                <span key={a.id} className="chip flex items-center gap-2">
-                  <BrandLogo {...lp} name={a.displayName} size={26} className="flex-shrink-0" />
-                  {a.displayName}
-                </span>
-              )})}
+              {alts.map(a => {
+                const lp = logoPropsFor(a.id)
+                return (
+                  <span key={a.id} className="chip flex items-center gap-2">
+                    <BrandLogo {...lp} name={a.displayName} size={26} className="flex-shrink-0" />
+                    {a.displayName}
+                  </span>
+                )
+              })}
             </div>
           </div>
         )}
@@ -75,7 +77,7 @@ export default function ResultsCard({
           <button className="btn btn-primary" onClick={onRetake}>Retake</button>
           <button
             className="btn"
-            onClick={async ()=>{
+            onClick={async () => {
               const text = `${brand?.displayName} + ${mixer} — via Drunkard's Dilemma`
               try {
                 await navigator.clipboard.writeText(text)
@@ -83,7 +85,9 @@ export default function ResultsCard({
                 setTimeout(() => setCopied(false), 2000)
               } catch {}
             }}
-          >{copied ? 'Copied!' : 'Share'}</button>
+          >
+            {copied ? 'Copied!' : 'Share'}
+          </button>
         </div>
       </div>
     </div>

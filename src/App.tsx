@@ -68,7 +68,7 @@ export default function App() {
           <img src="/logo.svg" alt="Drunkard's Dilemma" className="w-9 h-9" />
           <div>
             <h1 className="text-xl font-extrabold leading-tight">Drunkard's Dilemma</h1>
-            <p className="text-white/70 text-xs">You answer. We enable. Responsibly.</p>
+            <p className="text-white/50 text-xs">You answer. We enable. Responsibly.</p>
           </div>
         </button>
       </header>
