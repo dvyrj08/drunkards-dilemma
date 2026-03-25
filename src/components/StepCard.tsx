@@ -12,17 +12,27 @@ export default function StepCard({
   title: string
   options: string[]
   value?: string
-  onChange: (v: string)=>void
-  onRandomize: ()=>void
-  onSkip: ()=>void
+  onChange: (v: string) => void
+  onRandomize: () => void
+  onSkip: () => void
 }) {
   return (
     <div className="card space-y-5">
-      <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold">{title}</h2>
-        <div className="flex gap-2">
-          <button className="chip" onClick={onRandomize}>Randomize</button>
-          <button className="chip" onClick={onSkip}>Skip</button>
+      <div className="flex items-start justify-between gap-4">
+        <h2 className="text-2xl font-extrabold leading-tight">{title}</h2>
+        <div className="flex gap-3 shrink-0 pt-1">
+          <button
+            className="text-xs text-white/35 hover:text-white/70 transition-colors"
+            onClick={onRandomize}
+          >
+            🎲 Random
+          </button>
+          <button
+            className="text-xs text-white/35 hover:text-white/70 transition-colors"
+            onClick={onSkip}
+          >
+            Skip →
+          </button>
         </div>
       </div>
       <div className="grid grid-cols-2 gap-3">
@@ -31,7 +41,7 @@ export default function StepCard({
             key={opt}
             label={opt}
             selected={value === opt}
-            onClick={()=> onChange(opt)}
+            onClick={() => onChange(opt)}
           />
         ))}
       </div>

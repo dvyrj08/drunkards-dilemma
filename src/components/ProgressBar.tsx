@@ -1,15 +1,30 @@
 import React from 'react'
 
+const MILESTONES = [
+  'Warming up…',
+  'Getting somewhere…',
+  'Dialing in…',
+  'Halfway there.',
+  'Narrowing it down…',
+  'Almost got you.',
+  'Last stretch…',
+  'Final call.',
+]
+
 export default function ProgressBar({ step, total }: { step: number; total: number }) {
-  const pct = Math.round((step/total)*100)
+  const pct = Math.round((step / total) * 100)
+  const label = MILESTONES[step - 1] ?? `Step ${step}`
   return (
-    <div className="w-full">
-      <div className="flex justify-between text-xs text-white/70 mb-1">
-        <span>Step {step} / {total}</span>
-        <span>{pct}%</span>
+    <div className="w-full space-y-2">
+      <div className="flex justify-between items-center">
+        <span className="text-sm font-semibold text-white/80">{label}</span>
+        <span className="text-xs text-white/35">{step} / {total}</span>
       </div>
-      <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-        <div className="h-full bg-white" style={{ width: `${pct}%` }} />
+      <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+        <div
+          className="h-full rounded-full transition-all duration-500 ease-out"
+          style={{ width: `${pct}%`, background: 'linear-gradient(90deg, #dc2626, #f87171)' }}
+        />
       </div>
     </div>
   )

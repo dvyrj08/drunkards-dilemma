@@ -76,20 +76,26 @@ export default function App() {
       {phase === 'quiz' ? (
         <>
           <ProgressBar step={step + 1} total={total} />
-          <StepCard
-            title={current.title}
-            options={current.options as string[]}
-            value={(answers as Record<string, string | undefined>)[current.key]}
-            onChange={v => setAnswer(current.key, v)}
-            onRandomize={randomize}
-            onSkip={skip}
-          />
-          <div className="flex gap-3 justify-between">
-            <button className="btn" onClick={() => setStep(s => Math.max(0, s - 1))} disabled={step === 0}>
-              Back
+          <div key={step} className="step-enter">
+            <StepCard
+              title={current.title}
+              options={current.options as string[]}
+              value={(answers as Record<string, string | undefined>)[current.key]}
+              onChange={v => setAnswer(current.key, v)}
+              onRandomize={randomize}
+              onSkip={skip}
+            />
+          </div>
+          <div className="flex gap-3 items-center">
+            <button
+              className="btn text-white/40 hover:text-white/70 transition-colors disabled:opacity-20"
+              onClick={() => setStep(s => Math.max(0, s - 1))}
+              disabled={step === 0}
+            >
+              ← Back
             </button>
-            <button className="btn btn-primary" onClick={advance}>
-              {step === total - 1 ? 'See Results' : 'Next'}
+            <button className="btn btn-primary flex-1 text-base" onClick={advance}>
+              {step === total - 1 ? 'See my drink →' : 'Next →'}
             </button>
           </div>
         </>
