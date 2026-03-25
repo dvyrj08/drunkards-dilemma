@@ -58,7 +58,7 @@ export default function App() {
     () => winner
       ? wittyRationale(answers, winner)
       : 'Nothing matched cleanly. Pick any whiskey and call it a character arc.',
-    [answers, winner, confidence]
+    [answers, winner]
   )
 
   return (

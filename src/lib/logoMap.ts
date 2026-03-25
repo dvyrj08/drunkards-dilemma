@@ -62,18 +62,6 @@ const DOMAIN_MAP: Record<string, string> = {
   "woodford-reserve": "woodfordreserve.com",
 };
 
-const simpleSlugFromId = (id?: string) => {
-  if (!id) return undefined;
-  // convert 'johnnie-walker-black' -> 'johnniewalker' (brand family) in some common cases
-  const core = id
-    .replace(/-black|-silver|-reposado|-blanco|-draught|-extra|-especial|-plata|\d+$/g, '')
-    .replace(/-\d+$/, '')
-    .split('-')
-    .slice(0, 2) // often first 1-2 words are the brand
-    .join('');
-  return core || id.replace(/[^a-z0-9]+/g, '');
-};
-
 import logoBg from '../data/logoBg.json'
 
 export const logoPropsFor = (id?: string): LogoProps => {

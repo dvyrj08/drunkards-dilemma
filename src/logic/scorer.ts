@@ -4,12 +4,22 @@ import brandsRaw from '../data/brands.json'
 const brands = brandsRaw as Brand[]
 
 const mixerBuckets: Record<string, string[]> = {
-  bubbly: ['soda water', 'tonic', 'lemon-lime soda', 'ginger ale', 'ginger beer', 'prosecco'],
-  citrus: ['lime juice', 'lemonade', 'orange juice', 'grapefruit soda', 'cranberry juice'],
-  cola: ['cola'],
-  tonic: ['tonic'],
-  ginger: ['ginger ale', 'ginger beer'],
-  none: ['none'],
+  bubbly:  ['soda water', 'tonic', 'lemon-lime soda', 'ginger ale', 'ginger beer', 'prosecco', 'cream soda', 'energy drink', 'coconut water'],
+  citrus:  ['lime juice', 'lemonade', 'orange juice', 'grapefruit soda', 'cranberry juice', 'sour mix', 'pineapple juice', 'tomato juice', 'apple juice', 'orange juice', 'orange peel', 'orange twist'],
+  cola:    ['cola', 'cream soda'],
+  tonic:   ['tonic'],
+  ginger:  ['ginger ale', 'ginger beer'],
+  none:    ['none', 'bitters', 'coffee', 'hot chocolate', 'milk', 'cream'],
+}
+
+// Subcategories: map quiz occasion options to the richer values used in brands.json
+const occasionGroups: Record<string, string[]> = {
+  'solo unwind':  ['solo unwind', 'quiet night', 'movie night', 'balcony chill', 'after-dinner'],
+  'date night':   ['date night', 'dinner', 'restaurant'],
+  'house party':  ['house party', 'barbecue', 'patio', 'garden party', 'beach day', 'picnic'],
+  'game night':   ['game night', 'pub'],
+  'celebration':  ['celebration', 'brunch', 'holiday', 'aperitivo'],
+  'pre-game':     ['pre-game', 'club', 'bar'],
 }
 
 const placeVibes: Record<string, string[]> = {
@@ -51,7 +61,8 @@ function scoreOne(b: Brand, answers: Answers): { score: number; maxScore: number
 
   if (answers.occasion !== undefined) {
     maxScore += 2
-    if (b.occasions.includes(answers.occasion)) score += 2
+    const validOccasions = occasionGroups[answers.occasion] ?? [answers.occasion]
+    if (b.occasions.some(o => validOccasions.includes(o))) score += 2
   }
 
   if (answers.weather !== undefined) {

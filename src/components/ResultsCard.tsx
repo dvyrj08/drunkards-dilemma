@@ -88,7 +88,10 @@ export default function ResultsCard({
                 await navigator.clipboard.writeText(text)
                 setCopied(true)
                 setTimeout(() => setCopied(false), 2000)
-              } catch {}
+              } catch {
+                setCopied(false)
+                alert('Copy failed — your browser blocked clipboard access.')
+              }
             }}
           >
             {copied ? 'Copied!' : 'Share'}

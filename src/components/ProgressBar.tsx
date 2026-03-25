@@ -20,7 +20,14 @@ export default function ProgressBar({ step, total }: { step: number; total: numb
         <span className="text-sm font-semibold text-white/80">{label}</span>
         <span className="text-xs text-white/35">{step} / {total}</span>
       </div>
-      <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+      <div
+        className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden"
+        role="progressbar"
+        aria-valuenow={step}
+        aria-valuemin={0}
+        aria-valuemax={total}
+        aria-label={`Quiz progress: ${label}`}
+      >
         <div
           className="h-full rounded-full transition-all duration-500 ease-out"
           style={{ width: `${pct}%`, background: 'linear-gradient(90deg, #dc2626, #f87171)' }}
