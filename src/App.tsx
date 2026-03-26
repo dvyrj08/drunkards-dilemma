@@ -4,6 +4,7 @@ import StepCard from './components/StepCard'
 import ResultsCard from './components/ResultsCard'
 import FooterLegal from './components/FooterLegal'
 import QuickPick from './components/QuickPick'
+import DrinkDirectory from './components/DrinkDirectory'
 import type { Answers } from './types'
 import { scoreBrands, wittyRationale, pickMixer } from './logic/scorer'
 
@@ -19,7 +20,7 @@ const steps = [
 ] as const
 
 type StepKey = typeof steps[number]['key']
-type Phase = 'quiz' | 'results'
+type Phase = 'quiz' | 'results' | 'directory'
 
 export default function App() {
   const [phase, setPhase]       = useState<Phase>('quiz')
@@ -83,9 +84,17 @@ export default function App() {
             <p className="text-white/50 text-xs">You answer. We suggest. You decide.</p>
           </div>
         </button>
+        <button
+          className="btn text-sm text-white/70 hover:text-white transition-colors"
+          onClick={() => setPhase('directory')}
+        >
+          Browse
+        </button>
       </header>
 
-      {phase === 'quiz' ? (
+      {phase === 'directory' ? (
+        <DrinkDirectory onBack={() => setPhase('quiz')} />
+      ) : phase === 'quiz' ? (
         <>
           {step === 0 && <QuickPick onSkip={handleSkipQuiz} />}
           <ProgressBar step={step + 1} total={total} />

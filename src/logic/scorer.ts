@@ -152,7 +152,27 @@ function rnd<T>(arr: T[]): T { return arr[Math.floor(Math.random() * arr.length)
 
 export function wittyRationale(ans: Answers, brand: Brand): string {
   const name = brand.displayName
-  const { mood, occasion, flavor, place, weather, strength, budget } = ans
+  const { mood, occasion, flavor, place, weather, strength, budget, mixerMood } = ans
+
+  const isSkipped = !mood && !occasion && !flavor && !place && !weather && !strength && !budget && !mixerMood
+
+  if (isSkipped) {
+    const skipPool = [
+      `No questions asked. No regrets.`,
+      `The universe pointed at ${name}. Who are we to argue.`,
+      `Blind pick. Bold choice.`,
+      `You let fate decide. Fate said ${name}.`,
+      `Zero answers, one result. ${name}.`,
+      `Skipped the quiz, still got a great recommendation. Funny how that works.`,
+      `Sometimes you just close your eyes and point. This is what that looks like.`,
+      `${name}. No data. Pure instinct.`,
+      `No inputs. No bias. Just ${name}.`,
+      `The algorithm had nothing to work with. It picked ${name} anyway.`,
+      `Skipped everything. ${name} showed up. Make of that what you will.`,
+      `Pure chaos theory. The answer is ${name}.`,
+    ]
+    return rnd(skipPool)
+  }
 
   // Build a pool of valid lines based on what was answered
   const pool: string[] = []

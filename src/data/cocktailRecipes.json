@@ -1,0 +1,626 @@
+{
+  "Alberta Sour": {
+    "ingredients": ["2 oz Alberta Premium rye whisky", "3/4 oz lemon juice", "1/2 oz simple syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Altos Margarita": {
+    "ingredients": ["2 oz Olmeca Altos tequila", "1 oz lime juice", "3/4 oz triple sec", "Salt for rim"],
+    "method": "Shake with ice, strain into a salt-rimmed glass over ice."
+  },
+  "Americano": {
+    "ingredients": ["1.5 oz Campari", "1.5 oz sweet vermouth", "Soda water to top", "Orange slice to garnish"],
+    "method": "Build over ice in a rocks glass, top with soda water, garnish with orange."
+  },
+  "Anejo Old Fashioned": {
+    "ingredients": ["2 oz añejo tequila", "1/4 oz agave syrup", "2 dashes Angostura bitters", "Orange twist to garnish"],
+    "method": "Stir all ingredients with ice, strain into a rocks glass over a large ice cube, garnish with orange twist."
+  },
+  "Anejo Sour": {
+    "ingredients": ["2 oz añejo tequila", "3/4 oz lemon juice", "1/2 oz agave syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Aperol Sour": {
+    "ingredients": ["1.5 oz Aperol", "1 oz lemon juice", "3/4 oz simple syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a coupe glass."
+  },
+  "Aperol Spritz": {
+    "ingredients": ["3 oz prosecco", "2 oz Aperol", "1 oz soda water", "Orange slice to garnish"],
+    "method": "Build over ice in a wine glass, add prosecco first, then Aperol, then soda water, garnish with orange."
+  },
+  "Apple Shandy": {
+    "ingredients": ["12 oz lager or pale ale", "4 oz apple juice or sparkling apple cider"],
+    "method": "Pour beer into a chilled glass, then gently top with apple juice."
+  },
+  "Averna Sour": {
+    "ingredients": ["2 oz Averna amaro", "3/4 oz lemon juice", "1/2 oz simple syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Averna Spritz": {
+    "ingredients": ["2 oz Averna amaro", "3 oz prosecco", "1 oz soda water", "Orange twist to garnish"],
+    "method": "Build over ice in a wine glass, add Averna, then prosecco, then soda water, garnish with orange twist."
+  },
+  "Aviation": {
+    "ingredients": ["2 oz gin", "1/2 oz maraschino liqueur", "1/2 oz crème de violette", "3/4 oz lemon juice"],
+    "method": "Shake all ingredients with ice, strain into a chilled coupe glass."
+  },
+  "Baileys on the Rocks": {
+    "ingredients": ["2 oz Baileys Irish Cream"],
+    "method": "Pour Baileys over ice in a rocks glass and serve."
+  },
+  "Bee's Knees": {
+    "ingredients": ["2 oz gin", "3/4 oz lemon juice", "3/4 oz honey syrup"],
+    "method": "Shake all ingredients with ice, strain into a chilled coupe glass."
+  },
+  "Beefeater G&T": {
+    "ingredients": ["2 oz Beefeater gin", "4 oz tonic water", "Lime wedge to garnish"],
+    "method": "Pour gin over ice in a highball glass, top with tonic, garnish with lime."
+  },
+  "Beefeater Martini": {
+    "ingredients": ["2.5 oz Beefeater gin", "1/2 oz dry vermouth", "Lemon twist or olive to garnish"],
+    "method": "Stir with ice, strain into a chilled martini glass, garnish with lemon twist or olive."
+  },
+  "Beer Shandy": {
+    "ingredients": ["12 oz lager or pale ale", "4 oz lemonade"],
+    "method": "Pour beer into a chilled glass, gently top with lemonade."
+  },
+  "Belvedere Martini": {
+    "ingredients": ["2.5 oz Belvedere vodka", "1/2 oz dry vermouth", "Lemon twist or olive to garnish"],
+    "method": "Stir with ice, strain into a chilled martini glass, garnish with lemon twist or olive."
+  },
+  "Belvedere Smash": {
+    "ingredients": ["2 oz Belvedere vodka", "1 oz lemon juice", "3/4 oz simple syrup", "6 fresh mint leaves", "Mint sprig to garnish"],
+    "method": "Muddle mint with syrup, add remaining ingredients, shake with ice, strain into a rocks glass over ice."
+  },
+  "Black & Soda": {
+    "ingredients": ["2 oz Johnnie Walker Black Label", "4 oz soda water", "Lemon wedge to garnish"],
+    "method": "Build over ice in a highball glass, top with soda water, garnish with lemon."
+  },
+  "Black & Tan": {
+    "ingredients": ["Half pint pale ale", "Half pint Guinness stout"],
+    "method": "Pour pale ale into a pint glass, then slowly float Guinness on top by pouring over the back of a spoon."
+  },
+  "Black Manhattan": {
+    "ingredients": ["2 oz rye or bourbon", "1 oz Averna amaro", "2 dashes Angostura bitters", "Maraschino cherry to garnish"],
+    "method": "Stir all ingredients with ice, strain into a chilled coupe, garnish with cherry."
+  },
+  "Black Russian": {
+    "ingredients": ["2 oz vodka", "1 oz Kahlúa"],
+    "method": "Build over ice in a rocks glass and stir gently."
+  },
+  "Black Sombrero": {
+    "ingredients": ["1.5 oz tequila", "1 oz Kahlúa", "2 oz cola"],
+    "method": "Build over ice in a rocks glass, stir gently."
+  },
+  "Bloody Mary": {
+    "ingredients": ["2 oz vodka", "4 oz tomato juice", "1/2 oz lemon juice", "2 dashes Worcestershire sauce", "Hot sauce, salt, pepper to taste", "Celery stalk to garnish"],
+    "method": "Combine all ingredients in a shaker with ice, roll between shaker and glass, pour into a highball glass over ice."
+  },
+  "Boulevardier": {
+    "ingredients": ["1.5 oz bourbon", "1 oz sweet vermouth", "1 oz Campari", "Orange twist to garnish"],
+    "method": "Stir all ingredients with ice, strain into a rocks glass over a large ice cube, garnish with orange twist."
+  },
+  "Bud Light Chelada": {
+    "ingredients": ["1 can Bud Light", "1 oz lime juice", "Pinch of salt", "Tajín rim"],
+    "method": "Rim a glass with Tajín, fill with ice, add lime juice and salt, pour in Bud Light."
+  },
+  "Campari Spritz": {
+    "ingredients": ["2 oz Campari", "3 oz prosecco", "1 oz soda water", "Orange slice to garnish"],
+    "method": "Build over ice in a wine glass, add prosecco, Campari, soda water, garnish with orange."
+  },
+  "Canadian Old Fashioned": {
+    "ingredients": ["2 oz Canadian rye whisky", "1/4 oz simple syrup", "2 dashes Angostura bitters", "Orange twist to garnish"],
+    "method": "Stir all ingredients with ice, strain into a rocks glass over a large ice cube, garnish with orange twist."
+  },
+  "Canadian Sour": {
+    "ingredients": ["2 oz Canadian whisky", "3/4 oz lemon juice", "1/2 oz simple syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Cape Codder": {
+    "ingredients": ["2 oz vodka", "4 oz cranberry juice", "Lime wedge to garnish"],
+    "method": "Build over ice in a highball glass, stir gently, garnish with lime."
+  },
+  "Captain & Cola": {
+    "ingredients": ["2 oz Captain Morgan Spiced Rum", "4 oz cola", "Lime wedge to garnish"],
+    "method": "Build over ice in a highball glass, stir gently, garnish with lime."
+  },
+  "Captain Sour": {
+    "ingredients": ["2 oz Captain Morgan Spiced Rum", "3/4 oz lemon juice", "1/2 oz simple syrup"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Casa Paloma": {
+    "ingredients": ["2 oz Casamigos tequila", "2 oz grapefruit juice", "1/2 oz lime juice", "1/2 oz agave syrup", "Grapefruit soda to top"],
+    "method": "Shake tequila, grapefruit juice, lime, and agave with ice, strain into a glass over ice, top with grapefruit soda."
+  },
+  "Cazuela": {
+    "ingredients": ["2 oz tequila blanco", "2 oz grapefruit juice", "1/2 oz lime juice", "Pinch of salt", "Grapefruit soda to top"],
+    "method": "Build in a clay cup or rocks glass over ice, stir gently and top with grapefruit soda."
+  },
+  "Chelada": {
+    "ingredients": ["1 can lager beer", "1 oz lime juice", "Pinch of salt"],
+    "method": "Rim a glass with salt, fill with ice, add lime juice, pour in beer."
+  },
+  "Cider Shandy": {
+    "ingredients": ["8 oz hard cider", "8 oz lemonade"],
+    "method": "Pour cider into a chilled glass, gently top with lemonade."
+  },
+  "Cider Spritz": {
+    "ingredients": ["4 oz hard cider", "2 oz elderflower liqueur", "2 oz soda water", "Apple slice to garnish"],
+    "method": "Build over ice in a wine glass, top with soda water, garnish with apple slice."
+  },
+  "Ciroc Martini": {
+    "ingredients": ["2.5 oz Cîroc vodka", "1/2 oz dry vermouth", "Lemon twist or olive to garnish"],
+    "method": "Stir with ice, strain into a chilled martini glass, garnish with lemon twist or olive."
+  },
+  "Ciroc Spritz": {
+    "ingredients": ["2 oz Cîroc vodka", "3 oz prosecco", "1 oz peach nectar", "Mint sprig to garnish"],
+    "method": "Build over ice in a wine glass, add vodka, peach nectar, then prosecco, garnish with mint."
+  },
+  "Classic Manhattan": {
+    "ingredients": ["2 oz rye or bourbon whiskey", "1 oz sweet vermouth", "2 dashes Angostura bitters", "Maraschino cherry to garnish"],
+    "method": "Stir all ingredients with ice, strain into a chilled coupe, garnish with cherry."
+  },
+  "Classic Margarita": {
+    "ingredients": ["2 oz tequila", "1 oz lime juice", "3/4 oz triple sec", "Salt for rim"],
+    "method": "Shake with ice, strain into a salt-rimmed rocks glass over ice."
+  },
+  "Coconut Crush": {
+    "ingredients": ["2 oz Malibu coconut rum", "2 oz pineapple juice", "2 oz cream of coconut", "Crushed ice"],
+    "method": "Blend with crushed ice or shake vigorously and pour into a chilled glass."
+  },
+  "Corona Sunrise": {
+    "ingredients": ["1 bottle Corona Extra", "2 oz tequila", "1 oz grenadine"],
+    "method": "Pour grenadine into a glass, add ice, slowly pour Corona and tequila."
+  },
+  "Cosmopolitan": {
+    "ingredients": ["1.5 oz vodka", "1/2 oz triple sec", "1 oz cranberry juice", "1/2 oz lime juice", "Lime wheel to garnish"],
+    "method": "Shake all ingredients with ice, strain into a chilled coupe, garnish with lime wheel."
+  },
+  "Creek & Cola": {
+    "ingredients": ["2 oz Forty Creek whisky", "4 oz cola", "Lime wedge to garnish"],
+    "method": "Build over ice in a highball glass, stir gently, garnish with lime."
+  },
+  "Crown & Ginger": {
+    "ingredients": ["2 oz Crown Royal", "4 oz ginger ale", "Lemon wedge to garnish"],
+    "method": "Build over ice in a highball glass, stir gently, garnish with lemon."
+  },
+  "Crown Sour": {
+    "ingredients": ["2 oz Crown Royal", "3/4 oz lemon juice", "1/2 oz simple syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Cuba Libre": {
+    "ingredients": ["2 oz white rum", "4 oz cola", "1/2 oz lime juice", "Lime wedge to garnish"],
+    "method": "Build over ice in a highball glass, add lime juice, top with cola, garnish with lime."
+  },
+  "Cucumber Cooler": {
+    "ingredients": ["2 oz gin", "1 oz lime juice", "3/4 oz simple syrup", "4 cucumber slices", "Soda water to top"],
+    "method": "Muddle cucumber, add remaining ingredients, shake with ice, strain into a glass over ice, top with soda water."
+  },
+  "Daiquiri": {
+    "ingredients": ["2 oz white rum", "3/4 oz lime juice", "1/2 oz simple syrup"],
+    "method": "Shake all ingredients with ice, strain into a chilled coupe glass."
+  },
+  "Dark & Stormy": {
+    "ingredients": ["2 oz dark rum", "4 oz ginger beer", "1/2 oz lime juice", "Lime wedge to garnish"],
+    "method": "Build over ice in a highball glass, add rum last so it floats on top, garnish with lime."
+  },
+  "Diplomatico Sour": {
+    "ingredients": ["2 oz Diplomático Reserva rum", "3/4 oz lemon juice", "1/2 oz simple syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Dirty Martini": {
+    "ingredients": ["2.5 oz vodka or gin", "1/2 oz dry vermouth", "1/2 oz olive brine", "Olives to garnish"],
+    "method": "Stir all ingredients with ice, strain into a chilled martini glass, garnish with olives."
+  },
+  "Don Julio Spritz": {
+    "ingredients": ["2 oz Don Julio Blanco tequila", "3 oz grapefruit soda", "1/2 oz lime juice", "Lime wheel to garnish"],
+    "method": "Build over ice in a wine glass, stir gently, garnish with lime wheel."
+  },
+  "El Diablo": {
+    "ingredients": ["2 oz tequila", "1/2 oz crème de cassis", "1/2 oz lime juice", "Ginger beer to top"],
+    "method": "Build tequila and crème de cassis over ice, add lime juice, top with ginger beer."
+  },
+  "El Presidente": {
+    "ingredients": ["2 oz white rum", "3/4 oz dry vermouth", "1/4 oz curaçao", "1/4 oz grenadine"],
+    "method": "Stir all ingredients with ice, strain into a chilled coupe."
+  },
+  "Elderflower Fizz": {
+    "ingredients": ["1 oz elderflower liqueur", "1/2 oz lemon juice", "Prosecco to top", "Lemon twist to garnish"],
+    "method": "Add elderflower and lemon juice to a flute, top with prosecco, garnish with lemon twist."
+  },
+  "Empress G&T": {
+    "ingredients": ["2 oz Empress 1908 gin", "4 oz tonic water", "Grapefruit slice to garnish"],
+    "method": "Pour gin over ice in a large wine glass, top with tonic water, garnish with grapefruit slice."
+  },
+  "Empress Sour": {
+    "ingredients": ["2 oz Empress 1908 gin", "3/4 oz lemon juice", "1/2 oz simple syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a coupe or rocks glass."
+  },
+  "Espresso Martini": {
+    "ingredients": ["2 oz vodka", "1 oz Kahlúa", "1 oz fresh espresso", "Coffee beans to garnish"],
+    "method": "Shake all ingredients vigorously with ice, strain into a chilled coupe, garnish with coffee beans."
+  },
+  "Forty Creek Old Fashioned": {
+    "ingredients": ["2 oz Forty Creek whisky", "1/4 oz simple syrup", "2 dashes Angostura bitters", "Orange twist to garnish"],
+    "method": "Stir all ingredients with ice, strain into a rocks glass over a large ice cube, garnish with orange twist."
+  },
+  "French 75": {
+    "ingredients": ["1.5 oz gin", "3/4 oz lemon juice", "1/2 oz simple syrup", "Champagne to top", "Lemon twist to garnish"],
+    "method": "Shake gin, lemon juice, and syrup with ice, strain into a flute, top with champagne."
+  },
+  "French Martini": {
+    "ingredients": ["2 oz vodka", "1 oz Chambord raspberry liqueur", "1 oz pineapple juice"],
+    "method": "Shake all ingredients with ice, strain into a chilled coupe glass."
+  },
+  "Gin & Tonic": {
+    "ingredients": ["2 oz gin", "4 oz tonic water", "Lime wedge to garnish"],
+    "method": "Pour gin over ice in a highball glass, top with tonic water, garnish with lime."
+  },
+  "Glenfiddich Highball": {
+    "ingredients": ["2 oz Glenfiddich 12 Year Scotch", "4 oz soda water", "Lemon twist to garnish"],
+    "method": "Build over ice in a highball glass, top with soda water, garnish with lemon twist."
+  },
+  "Gold Rush": {
+    "ingredients": ["2 oz bourbon", "3/4 oz lemon juice", "3/4 oz honey syrup"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over a large ice cube."
+  },
+  "Grape Crush": {
+    "ingredients": ["1.5 oz vodka", "1/2 oz Chambord or grape liqueur", "3 oz grape juice", "Soda water to top"],
+    "method": "Shake vodka, liqueur, and grape juice with ice, strain into a glass over ice, top with soda water."
+  },
+  "Greyhound": {
+    "ingredients": ["2 oz vodka", "4 oz grapefruit juice", "Salt rim optional"],
+    "method": "Build over ice in a highball glass, stir gently."
+  },
+  "Guinness Float": {
+    "ingredients": ["1 pint Guinness Draught", "1 scoop vanilla ice cream"],
+    "method": "Scoop ice cream into a glass, slowly pour Guinness alongside it and serve immediately."
+  },
+  "Havana Highball": {
+    "ingredients": ["2 oz Havana Club 7 Year rum", "4 oz soda water", "Lime wedge to garnish"],
+    "method": "Build over ice in a highball glass, top with soda water, garnish with lime."
+  },
+  "Herradura Sour": {
+    "ingredients": ["2 oz Herradura Reposado tequila", "3/4 oz lemon juice", "1/2 oz agave syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Highland Sour": {
+    "ingredients": ["2 oz Scotch whisky", "3/4 oz lemon juice", "1/2 oz honey syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Hot Toddy": {
+    "ingredients": ["2 oz whiskey", "1 oz lemon juice", "1 tbsp honey", "4 oz hot water", "Lemon wheel and cinnamon stick to garnish"],
+    "method": "Combine whiskey, lemon juice, and honey in a mug, top with hot water, stir and garnish."
+  },
+  "Irish Car Bomb": {
+    "ingredients": ["3/4 pint Guinness Draught", "1 oz Irish whiskey", "1 oz Baileys Irish Cream"],
+    "method": "Pour whiskey and Baileys into a shot glass, drop the shot into the Guinness and drink immediately."
+  },
+  "Irish Coffee": {
+    "ingredients": ["1.5 oz Irish whiskey", "4 oz hot coffee", "1 tsp brown sugar", "Heavy cream to float"],
+    "method": "Combine whiskey, coffee, and sugar in a warm glass, float cream poured over the back of a spoon."
+  },
+  "Irish Mule": {
+    "ingredients": ["2 oz Irish whiskey", "4 oz ginger beer", "1/2 oz lime juice", "Lime wedge to garnish"],
+    "method": "Build over ice in a copper mug, top with ginger beer, garnish with lime."
+  },
+  "Jack & Coke": {
+    "ingredients": ["2 oz Jack Daniel's", "4 oz cola", "Lime wedge to garnish"],
+    "method": "Build over ice in a highball glass, stir gently, garnish with lime."
+  },
+  "Jaeger Mule": {
+    "ingredients": ["2 oz Jägermeister", "4 oz ginger beer", "1/2 oz lime juice", "Lime wedge to garnish"],
+    "method": "Build over ice in a copper mug, top with ginger beer, garnish with lime."
+  },
+  "Jaegerbomb": {
+    "ingredients": ["1.5 oz Jägermeister", "1 can or glass Red Bull energy drink"],
+    "method": "Drop a shot of Jägermeister into a glass of Red Bull and drink immediately."
+  },
+  "Jalisco Sour": {
+    "ingredients": ["2 oz tequila blanco", "3/4 oz lemon juice", "1/2 oz agave syrup", "Dash of mole bitters", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Jamaican Mule": {
+    "ingredients": ["2 oz Appleton Estate rum", "4 oz ginger beer", "1/2 oz lime juice", "Lime wedge to garnish"],
+    "method": "Build over ice in a copper mug, top with ginger beer, garnish with lime."
+  },
+  "Kamikaze": {
+    "ingredients": ["1.5 oz vodka", "1/2 oz triple sec", "1/2 oz lime juice"],
+    "method": "Shake all ingredients with ice, strain into a chilled shot glass."
+  },
+  "Kentucky Buck": {
+    "ingredients": ["2 oz bourbon", "3/4 oz lemon juice", "1/2 oz simple syrup", "1 strawberry", "Ginger beer to top"],
+    "method": "Muddle strawberry, add bourbon, lemon, syrup, shake with ice, strain into a glass over ice, top with ginger beer."
+  },
+  "Kraken & Cola": {
+    "ingredients": ["2 oz Kraken Black Spiced Rum", "4 oz cola", "Lime wedge to garnish"],
+    "method": "Build over ice in a highball glass, stir gently, garnish with lime."
+  },
+  "Laphroaig Highball": {
+    "ingredients": ["2 oz Laphroaig 10 Year Scotch", "4 oz soda water", "Lemon twist to garnish"],
+    "method": "Build over ice in a highball glass, top with soda water, garnish with lemon twist."
+  },
+  "Lavender Gin Fizz": {
+    "ingredients": ["2 oz gin", "3/4 oz lemon juice", "3/4 oz lavender syrup", "Soda water to top", "Lavender sprig to garnish"],
+    "method": "Shake gin, lemon, and syrup with ice, strain into a glass over ice, top with soda water, garnish with lavender."
+  },
+  "Long Island Iced Tea": {
+    "ingredients": ["1/2 oz vodka", "1/2 oz tequila", "1/2 oz white rum", "1/2 oz gin", "1/2 oz triple sec", "3/4 oz lemon juice", "1/2 oz simple syrup", "Cola to top"],
+    "method": "Shake all spirits, lemon juice, and syrup with ice, strain into a highball glass over ice, top with cola."
+  },
+  "Lynchburg Lemonade": {
+    "ingredients": ["1.5 oz Jack Daniel's", "1 oz triple sec", "1 oz lemon juice", "Lemon-lime soda to top"],
+    "method": "Shake whiskey, triple sec, and lemon juice with ice, strain into a glass over ice, top with lemon-lime soda."
+  },
+  "Macallan Manhattan": {
+    "ingredients": ["2 oz The Macallan 12 Year Scotch", "1 oz sweet vermouth", "2 dashes Angostura bitters", "Maraschino cherry to garnish"],
+    "method": "Stir all ingredients with ice, strain into a chilled coupe, garnish with cherry."
+  },
+  "Maker's Sour": {
+    "ingredients": ["2 oz Maker's Mark bourbon", "3/4 oz lemon juice", "1/2 oz simple syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Malibu Sunset": {
+    "ingredients": ["2 oz Malibu coconut rum", "3 oz pineapple juice", "1 oz grenadine", "Orange slice to garnish"],
+    "method": "Build pineapple juice and Malibu over ice, slowly pour grenadine to create sunset effect, garnish with orange."
+  },
+  "Margarita": {
+    "ingredients": ["2 oz tequila blanco", "1 oz lime juice", "3/4 oz triple sec", "Salt for rim"],
+    "method": "Shake with ice, strain into a salt-rimmed rocks glass over ice."
+  },
+  "Margarita Reposado": {
+    "ingredients": ["2 oz reposado tequila", "1 oz lime juice", "3/4 oz triple sec", "Salt for rim"],
+    "method": "Shake with ice, strain into a salt-rimmed rocks glass over ice."
+  },
+  "Mexican Mule": {
+    "ingredients": ["2 oz tequila blanco", "4 oz ginger beer", "1/2 oz lime juice", "Lime wedge to garnish"],
+    "method": "Build over ice in a copper mug, top with ginger beer, garnish with lime."
+  },
+  "Mezcal Negroni": {
+    "ingredients": ["1 oz mezcal", "1 oz sweet vermouth", "1 oz Campari", "Orange twist to garnish"],
+    "method": "Stir all ingredients with ice, strain into a rocks glass over a large ice cube, garnish with orange twist."
+  },
+  "Mezcal Sour": {
+    "ingredients": ["2 oz mezcal", "3/4 oz lemon juice", "1/2 oz agave syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Michelada": {
+    "ingredients": ["1 bottle Mexican lager", "1 oz lime juice", "2 dashes Worcestershire sauce", "Hot sauce to taste", "Tajín and salt rim"],
+    "method": "Rim a glass with Tajín and salt, fill with ice, add lime juice, Worcestershire, and hot sauce, pour in beer."
+  },
+  "Mint Julep": {
+    "ingredients": ["2.5 oz bourbon", "1/2 oz simple syrup", "8–10 fresh mint leaves", "Crushed ice", "Mint sprig to garnish"],
+    "method": "Muddle mint with syrup in a julep cup, pack with crushed ice, add bourbon, garnish with mint."
+  },
+  "Mojito": {
+    "ingredients": ["2 oz white rum", "1 oz lime juice", "3/4 oz simple syrup", "8 fresh mint leaves", "Soda water to top"],
+    "method": "Muddle mint with syrup and lime juice, add rum, fill with crushed ice, top with soda water."
+  },
+  "Montelobos Paloma": {
+    "ingredients": ["2 oz Montelobos mezcal", "2 oz grapefruit juice", "1/2 oz lime juice", "1/2 oz agave syrup", "Grapefruit soda to top", "Salt rim"],
+    "method": "Shake mezcal, grapefruit juice, lime, and agave with ice, strain into a salt-rimmed glass over ice, top with soda."
+  },
+  "Moscow Mule": {
+    "ingredients": ["2 oz vodka", "4 oz ginger beer", "1/2 oz lime juice", "Lime wedge to garnish"],
+    "method": "Build over ice in a copper mug, top with ginger beer, garnish with lime."
+  },
+  "Mudslide": {
+    "ingredients": ["1.5 oz vodka", "1 oz Kahlúa", "1 oz Baileys Irish Cream"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice or blend with ice."
+  },
+  "Naked & Famous": {
+    "ingredients": ["3/4 oz mezcal", "3/4 oz Aperol", "3/4 oz yellow Chartreuse", "3/4 oz lime juice"],
+    "method": "Shake all ingredients with ice, strain into a chilled coupe."
+  },
+  "Negroni": {
+    "ingredients": ["1 oz gin", "1 oz sweet vermouth", "1 oz Campari", "Orange twist to garnish"],
+    "method": "Stir all ingredients with ice, strain into a rocks glass over a large ice cube, garnish with orange twist."
+  },
+  "Oaxacan Old Fashioned": {
+    "ingredients": ["1.5 oz reposado tequila", "0.5 oz mezcal", "1/4 oz agave syrup", "2 dashes Angostura bitters", "Orange twist to garnish"],
+    "method": "Stir all ingredients with ice, strain into a rocks glass over a large ice cube, garnish with orange twist."
+  },
+  "Old Fashioned": {
+    "ingredients": ["2 oz bourbon or rye whiskey", "1/4 oz simple syrup", "2 dashes Angostura bitters", "Orange twist to garnish"],
+    "method": "Stir all ingredients with ice, strain into a rocks glass over a large ice cube, garnish with orange twist."
+  },
+  "Paloma": {
+    "ingredients": ["2 oz tequila blanco", "2 oz grapefruit juice", "1/2 oz lime juice", "1/2 oz agave syrup", "Grapefruit soda to top", "Salt rim"],
+    "method": "Shake tequila, grapefruit juice, lime, and agave with ice, strain into a salt-rimmed glass over ice, top with soda."
+  },
+  "Paper Plane": {
+    "ingredients": ["3/4 oz bourbon", "3/4 oz Aperol", "3/4 oz Amaro Nonino", "3/4 oz lemon juice"],
+    "method": "Shake all ingredients with ice, strain into a chilled coupe."
+  },
+  "Penicillin": {
+    "ingredients": ["2 oz blended Scotch whisky", "3/4 oz lemon juice", "3/4 oz honey-ginger syrup", "1/4 oz Islay Scotch float"],
+    "method": "Shake blended Scotch, lemon, and syrup with ice, strain into a rocks glass over ice, float Islay Scotch on top."
+  },
+  "Pina Colada": {
+    "ingredients": ["2 oz white rum", "2 oz coconut cream", "2 oz pineapple juice"],
+    "method": "Blend all ingredients with crushed ice until smooth, pour into a chilled glass."
+  },
+  "Pink Gin Fizz": {
+    "ingredients": ["2 oz pink gin", "3/4 oz lemon juice", "1/2 oz simple syrup", "Soda water to top", "Strawberry to garnish"],
+    "method": "Shake gin, lemon, and syrup with ice, strain into a glass over ice, top with soda water, garnish with strawberry."
+  },
+  "Planter's Punch": {
+    "ingredients": ["2 oz dark rum", "2 oz orange juice", "1 oz lemon juice", "1/2 oz grenadine", "Dash of Angostura bitters"],
+    "method": "Shake all ingredients with ice, strain into a highball glass over ice."
+  },
+  "Prairie Old Fashioned": {
+    "ingredients": ["2 oz Alberta Premium rye", "1/4 oz simple syrup", "2 dashes Angostura bitters", "Orange twist to garnish"],
+    "method": "Stir all ingredients with ice, strain into a rocks glass over a large ice cube, garnish with orange twist."
+  },
+  "Radler": {
+    "ingredients": ["12 oz lager beer", "6 oz citrus soda or lemonade"],
+    "method": "Pour beer into a chilled glass, top with citrus soda."
+  },
+  "Ranch Water": {
+    "ingredients": ["2 oz tequila blanco", "1 oz lime juice", "Sparkling water to top"],
+    "method": "Build tequila and lime over ice in a highball glass, top with sparkling water."
+  },
+  "Reposado Paloma": {
+    "ingredients": ["2 oz reposado tequila", "2 oz grapefruit juice", "1/2 oz lime juice", "1/2 oz agave syrup", "Grapefruit soda to top", "Salt rim"],
+    "method": "Shake tequila, grapefruit juice, lime, and agave with ice, strain into a salt-rimmed glass over ice, top with soda."
+  },
+  "Rob Roy": {
+    "ingredients": ["2 oz Scotch whisky", "1 oz sweet vermouth", "2 dashes Angostura bitters", "Maraschino cherry to garnish"],
+    "method": "Stir all ingredients with ice, strain into a chilled coupe, garnish with cherry."
+  },
+  "Rum Old Fashioned": {
+    "ingredients": ["2 oz aged rum", "1/4 oz simple syrup", "2 dashes Angostura bitters", "Orange twist to garnish"],
+    "method": "Stir all ingredients with ice, strain into a rocks glass over a large ice cube, garnish with orange twist."
+  },
+  "Rum Punch": {
+    "ingredients": ["2 oz dark rum", "2 oz orange juice", "1 oz pineapple juice", "1/2 oz grenadine", "Dash of Angostura bitters"],
+    "method": "Shake all ingredients with ice, strain into a highball glass over ice, garnish with fruit."
+  },
+  "Rye & Ginger": {
+    "ingredients": ["2 oz rye whisky", "4 oz ginger ale", "Lemon wedge to garnish"],
+    "method": "Build over ice in a highball glass, stir gently, garnish with lemon."
+  },
+  "Rye Manhattan": {
+    "ingredients": ["2 oz rye whisky", "1 oz sweet vermouth", "2 dashes Angostura bitters", "Maraschino cherry to garnish"],
+    "method": "Stir all ingredients with ice, strain into a chilled coupe, garnish with cherry."
+  },
+  "Rye Old Fashioned": {
+    "ingredients": ["2 oz rye whisky", "1/4 oz simple syrup", "2 dashes Angostura bitters", "Orange twist to garnish"],
+    "method": "Stir all ingredients with ice, strain into a rocks glass over a large ice cube, garnish with orange twist."
+  },
+  "Sangria Punch": {
+    "ingredients": ["1 bottle red wine", "2 oz brandy", "2 oz triple sec", "2 cups orange juice", "1 cup fruit slices", "Soda water to top"],
+    "method": "Combine wine, brandy, triple sec, orange juice, and fruit in a pitcher, refrigerate 2 hours, serve over ice with soda water."
+  },
+  "Sangrita Chaser": {
+    "ingredients": ["2 oz tequila blanco", "2 oz tomato juice chaser", "1 oz orange juice", "1/2 oz lime juice", "Hot sauce and salt to taste"],
+    "method": "Serve tequila as a shot alongside a chaser made from tomato juice, orange juice, lime, hot sauce, and salt."
+  },
+  "Scotch & Soda": {
+    "ingredients": ["2 oz Scotch whisky", "4 oz soda water", "Lemon twist to garnish"],
+    "method": "Build over ice in a highball glass, top with soda water, garnish with lemon twist."
+  },
+  "Scotch Sour": {
+    "ingredients": ["2 oz Scotch whisky", "3/4 oz lemon juice", "1/2 oz honey syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Screwdriver": {
+    "ingredients": ["2 oz vodka", "4 oz orange juice", "Orange slice to garnish"],
+    "method": "Build over ice in a highball glass, stir gently, garnish with orange slice."
+  },
+  "Sea Breeze": {
+    "ingredients": ["2 oz vodka", "3 oz cranberry juice", "1 oz grapefruit juice", "Lime wedge to garnish"],
+    "method": "Build over ice in a highball glass, stir gently, garnish with lime."
+  },
+  "Shandy": {
+    "ingredients": ["12 oz lager beer", "4 oz lemonade"],
+    "method": "Pour beer into a chilled glass, gently top with lemonade."
+  },
+  "Sidecar": {
+    "ingredients": ["2 oz cognac or brandy", "3/4 oz triple sec", "3/4 oz lemon juice", "Sugar rim"],
+    "method": "Shake all ingredients with ice, strain into a sugar-rimmed coupe."
+  },
+  "Smirnoff Mule": {
+    "ingredients": ["2 oz Smirnoff vodka", "4 oz ginger beer", "1/2 oz lime juice", "Lime wedge to garnish"],
+    "method": "Build over ice in a copper mug, top with ginger beer, garnish with lime."
+  },
+  "Smoke & Mirrors": {
+    "ingredients": ["1.5 oz mezcal", "1/2 oz Aperol", "3/4 oz lemon juice", "1/2 oz honey syrup", "Rosemary sprig to garnish"],
+    "method": "Shake all ingredients with ice, strain into a coupe, garnish with a smoked rosemary sprig."
+  },
+  "Smoky Sour": {
+    "ingredients": ["2 oz Laphroaig or smoky Scotch", "3/4 oz lemon juice", "1/2 oz honey syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Snakebite": {
+    "ingredients": ["Half pint lager", "Half pint hard cider"],
+    "method": "Pour lager into a pint glass first, then carefully pour cider on top to layer."
+  },
+  "Somersby Sour": {
+    "ingredients": ["4 oz Somersby apple cider", "1 oz lemon juice", "1/2 oz simple syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Spiced Rum Punch": {
+    "ingredients": ["2 oz spiced rum", "2 oz orange juice", "1 oz pineapple juice", "1/2 oz grenadine", "Dash of Angostura bitters"],
+    "method": "Shake all ingredients with ice, strain into a highball glass over ice."
+  },
+  "Spicy Margarita": {
+    "ingredients": ["2 oz tequila blanco", "1 oz lime juice", "3/4 oz triple sec", "2–3 jalapeño slices", "Salt rim"],
+    "method": "Muddle jalapeño, add remaining ingredients, shake with ice, strain into a salt-rimmed rocks glass over ice."
+  },
+  "Strongbow & Black": {
+    "ingredients": ["8 oz Strongbow cider", "2 oz blackcurrant cordial or Ribena"],
+    "method": "Pour cider into a glass over ice, then add the blackcurrant cordial and stir gently."
+  },
+  "Tanqueray Gimlet": {
+    "ingredients": ["2 oz Tanqueray gin", "3/4 oz lime juice", "3/4 oz simple syrup", "Lime wheel to garnish"],
+    "method": "Shake all ingredients with ice, strain into a chilled coupe, garnish with lime wheel."
+  },
+  "Tennessee Mule": {
+    "ingredients": ["2 oz Jack Daniel's Tennessee Whiskey", "4 oz ginger beer", "1/2 oz lime juice", "Lime wedge to garnish"],
+    "method": "Build over ice in a copper mug, top with ginger beer, garnish with lime."
+  },
+  "Tequila Spritz": {
+    "ingredients": ["2 oz tequila blanco", "3 oz prosecco", "1 oz soda water", "Lime wedge to garnish"],
+    "method": "Build over ice in a wine glass, add tequila, prosecco, then soda water, garnish with lime."
+  },
+  "Tequila Sunrise": {
+    "ingredients": ["2 oz tequila", "4 oz orange juice", "1/2 oz grenadine", "Orange slice and cherry to garnish"],
+    "method": "Build tequila and OJ over ice in a highball glass, slowly pour grenadine down the side, garnish."
+  },
+  "The Rusty Nail": {
+    "ingredients": ["2 oz Scotch whisky", "1 oz Drambuie", "Lemon twist to garnish"],
+    "method": "Build over ice in a rocks glass, stir gently, garnish with lemon twist."
+  },
+  "Tito's Lemonade": {
+    "ingredients": ["2 oz Tito's Handmade Vodka", "4 oz lemonade", "Lemon wheel to garnish"],
+    "method": "Build over ice in a highball glass, stir gently, garnish with lemon wheel."
+  },
+  "Tom Collins": {
+    "ingredients": ["2 oz gin", "1 oz lemon juice", "1/2 oz simple syrup", "Soda water to top", "Lemon slice and cherry to garnish"],
+    "method": "Shake gin, lemon, and syrup with ice, strain into a Collins glass over ice, top with soda water, garnish."
+  },
+  "Tommy's Margarita": {
+    "ingredients": ["2 oz tequila blanco", "1 oz lime juice", "1/2 oz agave syrup"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Vieux Carre": {
+    "ingredients": ["3/4 oz rye whiskey", "3/4 oz cognac", "3/4 oz sweet vermouth", "1/4 oz Bénédictine", "2 dashes Peychaud's bitters", "2 dashes Angostura bitters"],
+    "method": "Stir all ingredients with ice, strain into a rocks glass over a large ice cube."
+  },
+  "Vodka Cranberry": {
+    "ingredients": ["2 oz vodka", "4 oz cranberry juice", "Lime wedge to garnish"],
+    "method": "Build over ice in a highball glass, stir gently, garnish with lime."
+  },
+  "Vodka Lemonade": {
+    "ingredients": ["2 oz vodka", "4 oz lemonade", "Lemon wheel to garnish"],
+    "method": "Build over ice in a highball glass, stir gently, garnish with lemon."
+  },
+  "Vodka Soda": {
+    "ingredients": ["2 oz vodka", "4 oz soda water", "Lime wedge to garnish"],
+    "method": "Build over ice in a highball glass, top with soda water, garnish with lime."
+  },
+  "Watermelon Margarita": {
+    "ingredients": ["2 oz tequila blanco", "1.5 oz fresh watermelon juice", "3/4 oz lime juice", "1/2 oz triple sec", "Salt rim"],
+    "method": "Shake all ingredients with ice, strain into a salt-rimmed rocks glass over ice."
+  },
+  "Whiskey Smash": {
+    "ingredients": ["2 oz bourbon or rye", "3/4 oz lemon juice", "1/2 oz simple syrup", "6 fresh mint leaves", "Mint sprig to garnish"],
+    "method": "Muddle mint with syrup, add whiskey and lemon juice, shake with ice, strain into a rocks glass over ice."
+  },
+  "Whiskey Sour": {
+    "ingredients": ["2 oz whiskey", "3/4 oz lemon juice", "1/2 oz simple syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "White Russian": {
+    "ingredients": ["2 oz vodka", "1 oz Kahlúa", "1 oz heavy cream"],
+    "method": "Build vodka and Kahlúa over ice in a rocks glass, float cream on top."
+  },
+  "Wild Turkey Sour": {
+    "ingredients": ["2 oz Wild Turkey 101 bourbon", "3/4 oz lemon juice", "1/2 oz simple syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  },
+  "Woodford Sour": {
+    "ingredients": ["2 oz Woodford Reserve bourbon", "3/4 oz lemon juice", "1/2 oz simple syrup", "Optional: egg white"],
+    "method": "Shake all ingredients with ice, strain into a rocks glass over ice."
+  }
+}
