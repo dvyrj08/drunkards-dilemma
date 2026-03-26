@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react'
 import type { Brand } from '../types'
 import brandsRaw from '../data/brands.json'
 import BrandLogo from './BrandLogo'
+import CocktailChips from './CocktailChips'
 import { logoPropsFor } from '../lib/logoMap'
 
 const brands = brandsRaw as Brand[]
@@ -107,14 +108,7 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
               </div>
             )}
             {selected.cocktails.length > 0 && (
-              <div className="bg-white/5 rounded-xl p-3">
-                <p className="text-xs text-white/50 uppercase tracking-widest mb-2">Cocktails</p>
-                <div className="flex flex-wrap gap-2">
-                  {selected.cocktails.map(c => (
-                    <span key={c} className="chip text-sm">{c}</span>
-                  ))}
-                </div>
-              </div>
+              <CocktailChips cocktails={selected.cocktails} />
             )}
           </div>
         </div>
