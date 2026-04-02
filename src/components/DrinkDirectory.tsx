@@ -60,14 +60,14 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
           ← Back to Directory
         </button>
         <div className="rounded-2xl overflow-hidden shadow-lg">
-          <div className={`${grad} px-5 pt-8 pb-6 flex flex-col items-center text-center gap-3`}>
-            <span className="category-pill self-end -mt-4">
+          <div className="px-5 pt-8 pb-6 flex flex-col items-center text-center gap-3">
+            <span className="category-pill self-end -mt-4 bg-black/40 backdrop-blur-sm border border-white/20">
               {catLabel[selected.category] ?? selected.category}
             </span>
             <BrandLogo {...lp} name={selected.displayName} size={96} className="logo-chip shadow-2xl" />
             <div>
-              <h2 className="text-2xl font-extrabold drop-shadow-sm">{selected.displayName}</h2>
-              <p className="text-white/70 text-sm mt-1">{selected.abv}% ABV</p>
+              <h2 className="text-2xl font-extrabold" style={{ textShadow: '0 2px 12px rgba(0,0,0,0.8), 0 0 4px rgba(0,0,0,0.9)' }}>{selected.displayName}</h2>
+              <p className="text-white/90 text-sm mt-1" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.8)' }}>{selected.abv}% ABV</p>
             </div>
           </div>
           <div className="card !rounded-t-none space-y-4">
