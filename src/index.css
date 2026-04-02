@@ -21,10 +21,10 @@ html, body, #root {
   @apply bg-white text-black hover:bg-white/90;
 }
 .chip {
-  @apply px-4 py-3 rounded-xl bg-white/10 border border-white/10 transition-all duration-150 text-sm flex items-center gap-2;
+  @apply px-4 py-3 rounded-xl bg-black/40 border border-white/20 backdrop-blur-sm transition-all duration-150 text-sm flex items-center gap-2 text-white;
 }
 .chip:hover:not(.chip-selected) {
-  @apply bg-white/15 border-white/20;
+  @apply bg-black/60 border-white/30;
   transform: scale(1.02);
 }
 .chip-selected {

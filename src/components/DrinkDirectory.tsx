@@ -222,11 +222,11 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
                   <BrandLogo {...lp} name={brand.displayName} size={56} className="logo-chip shadow-lg" />
                   <p className="text-sm font-bold leading-tight line-clamp-2">{brand.displayName}</p>
                 </div>
-                <div className="bg-white/5 px-3 py-2 space-y-1">
-                  <span className="text-xs text-white/50 capitalize">
+                <div className="bg-black/50 backdrop-blur-sm px-3 py-2 space-y-1">
+                  <span className="text-xs text-white/75 capitalize">
                     {catLabel[brand.category] ?? brand.category}
                   </span>
-                  <div className="flex items-center justify-between text-xs text-white/60">
+                  <div className="flex items-center justify-between text-xs text-white/80">
                     <span>{brand.abv}% ABV</span>
                     <span className="capitalize">{brand.priceTier}</span>
                   </div>
