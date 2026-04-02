@@ -25,7 +25,7 @@ export default function StepCard({
             className="text-xs text-white/35 hover:text-white/70 transition-colors"
             onClick={onRandomize}
           >
-            🎲 Random
+            Random
           </button>
           <button
             className="text-xs text-white/35 hover:text-white/70 transition-colors"
