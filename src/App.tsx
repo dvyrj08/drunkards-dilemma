@@ -123,13 +123,14 @@ export default function App() {
             />
           </div>
           <div className="flex gap-3 items-center">
-            <button
-              className="btn text-sm text-white bg-black/40 backdrop-blur-sm border border-white/20 hover:bg-black/60 transition-colors disabled:opacity-30"
-              onClick={() => setStep(s => Math.max(0, s - 1))}
-              disabled={step === 0}
-            >
-              ← Back
-            </button>
+            {step > 0 && (
+              <button
+                className="btn text-sm text-white bg-black/40 backdrop-blur-sm border border-white/20 hover:bg-black/60 transition-colors"
+                onClick={() => setStep(s => s - 1)}
+              >
+                ← Back
+              </button>
+            )}
             <button className="btn btn-primary flex-1 text-base" onClick={advance}>
               {step === total - 1 ? 'See my drink →' : 'Next →'}
             </button>
