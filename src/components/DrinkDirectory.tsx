@@ -135,7 +135,7 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
         placeholder="Search brands…"
         value={search}
         onChange={e => setSearch(e.target.value)}
-        className="w-full bg-white/15 rounded-xl px-4 py-2.5 text-sm text-white placeholder-white/50 outline-none focus:bg-white/20 transition-colors"
+        className="w-full bg-black/40 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-2.5 text-sm text-white placeholder-white/50 outline-none focus:bg-black/60 transition-colors"
       />
 
       {/* Category filter */}
