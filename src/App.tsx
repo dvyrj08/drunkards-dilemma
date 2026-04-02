@@ -95,11 +95,11 @@ export default function App() {
           <img src="/logo.svg" alt="Drunkard's Dilemma" className="w-9 h-9" />
           <div>
             <h1 className="text-xl font-extrabold leading-tight">Drunkard's Dilemma</h1>
-            <p className="text-white/50 text-xs">You answer. We suggest. You decide.</p>
+            <p className="text-white/75 text-xs">You answer. We suggest. You decide.</p>
           </div>
         </button>
         <button
-          className="btn text-sm text-white/70 hover:text-white transition-colors"
+          className="btn text-sm text-white bg-black/40 backdrop-blur-sm border border-white/20 hover:bg-black/60 transition-colors"
           onClick={() => setPhase('directory')}
         >
           Browse
@@ -124,7 +124,7 @@ export default function App() {
           </div>
           <div className="flex gap-3 items-center">
             <button
-              className="btn text-white/40 hover:text-white/70 transition-colors disabled:opacity-20"
+              className="btn text-white/80 hover:text-white transition-colors disabled:opacity-30"
               onClick={() => setStep(s => Math.max(0, s - 1))}
               disabled={step === 0}
             >
