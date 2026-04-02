@@ -124,7 +124,7 @@ export default function App() {
           </div>
           <div className="flex gap-3 items-center">
             <button
-              className="btn text-white/80 hover:text-white transition-colors disabled:opacity-30"
+              className="btn text-white bg-black/40 backdrop-blur-sm border border-white/20 hover:bg-black/60 transition-colors disabled:opacity-30"
               onClick={() => setStep(s => Math.max(0, s - 1))}
               disabled={step === 0}
             >
