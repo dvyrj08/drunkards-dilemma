@@ -218,9 +218,9 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
                 className="rounded-2xl overflow-hidden text-left hover:scale-[1.02] transition-transform active:scale-[0.98]"
                 onClick={() => setSelected(brand)}
               >
-                <div className={`${grad} px-3 pt-4 pb-3 flex flex-col items-center text-center gap-2`}>
+                <div className="bg-black/40 backdrop-blur-sm px-3 pt-4 pb-3 flex flex-col items-center text-center gap-2">
                   <BrandLogo {...lp} name={brand.displayName} size={56} className="logo-chip shadow-lg" />
-                  <p className="text-sm font-bold leading-tight line-clamp-2">{brand.displayName}</p>
+                  <p className="text-sm font-bold leading-tight line-clamp-2" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.8)' }}>{brand.displayName}</p>
                 </div>
                 <div className="bg-black/50 backdrop-blur-sm px-3 py-2 space-y-1">
                   <span className="text-xs text-white/75 capitalize">
