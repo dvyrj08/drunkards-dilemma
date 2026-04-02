@@ -52,7 +52,7 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
     const lp = logoPropsFor(selected.id)
     const grad = catClass[selected.category]
     return (
-      <div className="card space-y-4">
+      <div className="space-y-4">
         <button
           className="btn text-sm text-white bg-black/40 backdrop-blur-sm border border-white/20 hover:bg-black/60 transition-colors"
           onClick={() => setSelected(null)}
@@ -117,7 +117,7 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
   }
 
   return (
-    <div className="card space-y-4">
+    <div className="space-y-4">
       <div className="flex items-center gap-3">
         <button
           className="btn text-sm text-white bg-black/40 backdrop-blur-sm border border-white/20 hover:bg-black/60 transition-colors"
