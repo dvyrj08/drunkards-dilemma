@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react'
+import Dither from './components/Dither'
 import ProgressBar from './components/ProgressBar'
 import StepCard from './components/StepCard'
 import ResultsCard from './components/ResultsCard'
@@ -75,6 +76,19 @@ export default function App() {
   )
 
   return (
+    <>
+    <div className="fixed inset-0 -z-10">
+      <Dither
+        waveColor={[1, 0.1411764705882353, 0.1411764705882353]}
+        enableMouseInteraction={true}
+        mouseRadius={0.3}
+        colorNum={4}
+        waveAmplitude={0.3}
+        waveFrequency={3}
+        waveSpeed={0.05}
+        pixelSize={2}
+      />
+    </div>
     <main className="min-h-screen max-w-md mx-auto px-4 py-6 space-y-6">
       <header className="header-bar">
         <button className="header-left hover:opacity-75 transition-opacity" onClick={retake}>
@@ -135,5 +149,6 @@ export default function App() {
 
       <FooterLegal />
     </main>
+    </>
   )
 }
