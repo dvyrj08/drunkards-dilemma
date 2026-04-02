@@ -52,9 +52,9 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
     const lp = logoPropsFor(selected.id)
     const grad = catClass[selected.category]
     return (
-      <div className="space-y-4">
+      <div className="card space-y-4">
         <button
-          className="btn text-white/60 hover:text-white transition-colors"
+          className="btn text-sm text-white bg-black/40 backdrop-blur-sm border border-white/20 hover:bg-black/60 transition-colors"
           onClick={() => setSelected(null)}
         >
           ← Back to Directory
@@ -117,16 +117,16 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
   }
 
   return (
-    <div className="space-y-4">
+    <div className="card space-y-4">
       <div className="flex items-center gap-3">
         <button
-          className="btn text-white/60 hover:text-white transition-colors"
+          className="btn text-sm text-white bg-black/40 backdrop-blur-sm border border-white/20 hover:bg-black/60 transition-colors"
           onClick={onBack}
         >
           ← Back
         </button>
         <h2 className="text-xl font-extrabold">All Drinks</h2>
-        <span className="text-white/40 text-sm">{filtered.length} of {brands.length}</span>
+        <span className="text-white/70 text-sm">{filtered.length} of {brands.length}</span>
       </div>
 
       {/* Search */}
@@ -135,12 +135,12 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
         placeholder="Search brands…"
         value={search}
         onChange={e => setSearch(e.target.value)}
-        className="w-full bg-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-white/40 outline-none focus:bg-white/15 transition-colors"
+        className="w-full bg-white/15 rounded-xl px-4 py-2.5 text-sm text-white placeholder-white/50 outline-none focus:bg-white/20 transition-colors"
       />
 
       {/* Category filter */}
       <div>
-        <p className="text-xs text-white/40 uppercase tracking-widest mb-2">Category</p>
+        <p className="text-xs text-white/70 uppercase tracking-widest mb-2">Category</p>
         <div className="flex flex-wrap gap-2">
           <button
             className={`chip text-sm ${filterCat === 'all' ? 'bg-white/25' : ''}`}
@@ -163,7 +163,7 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
       {/* Price + Strength filters */}
       <div className="flex gap-4">
         <div className="flex-1">
-          <p className="text-xs text-white/40 uppercase tracking-widest mb-2">Price</p>
+          <p className="text-xs text-white/70 uppercase tracking-widest mb-2">Price</p>
           <div className="flex flex-wrap gap-2">
             <button
               className={`chip text-sm ${filterPrice === 'all' ? 'bg-white/25' : ''}`}
@@ -183,7 +183,7 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
           </div>
         </div>
         <div className="flex-1">
-          <p className="text-xs text-white/40 uppercase tracking-widest mb-2">Strength</p>
+          <p className="text-xs text-white/70 uppercase tracking-widest mb-2">Strength</p>
           <div className="flex flex-wrap gap-2">
             <button
               className={`chip text-sm ${filterStrength === 'all' ? 'bg-white/25' : ''}`}
