@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import type { Brand } from '../types'
 import ConvinceMe from './ConvinceMe'
 import DrinkRecipe from './DrinkRecipe'
 import CocktailChips from './CocktailChips'
 import BrandLogo from './BrandLogo'
 import { logoPropsFor } from '../lib/logoMap'
+import StoryCard from './StoryCard'
+import { shareStory } from '../lib/shareStory'
 
 const catClass: Record<NonNullable<Brand['category']>, string> = {
   whiskey:   'grad-whiskey',
@@ -43,7 +45,6 @@ export default function ResultsCard({
   onReroll: () => void
 }) {
   const grad = brand ? catClass[brand.category] : 'bg-white/10'
-  const [copied, setCopied] = useState(false)
 
   return (
     <div className="rounded-2xl overflow-hidden shadow-lg results-enter">
@@ -109,21 +110,26 @@ export default function ResultsCard({
           <button
             className="btn"
             onClick={async () => {
-              const text = `${brand?.displayName} + ${mixer} — via Drunkard's Dilemma`
               try {
-                await navigator.clipboard.writeText(text)
-                setCopied(true)
-                setTimeout(() => setCopied(false), 2000)
-              } catch {
-                setCopied(false)
-                alert('Copy failed — your browser blocked clipboard access.')
+                await shareStory()
+              } catch (err) {
+                console.error('Share failed', err)
               }
             }}
           >
-            {copied ? 'Copied!' : 'Share'}
+            Share
           </button>
         </div>
       </div>
+
+      {brand && (
+        <StoryCard
+          brand={brand}
+          mixer={mixer}
+          rationale={rationale}
+          logoSrc={`/logos/${brand.id}.png`}
+        />
+      )}
     </div>
   )
 }
