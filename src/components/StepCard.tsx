@@ -8,7 +8,7 @@ export default function StepCard({
   onChange,
   onRandomize,
   onSkip,
-  advancing,
+  advancing = false,
 }: {
   title: string
   options: string[]
