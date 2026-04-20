@@ -25,6 +25,12 @@ const catLabel: Partial<Record<NonNullable<Brand['category']>, string>> = {
   tennessee: 'Tennessee Whiskey',
 }
 
+function confidenceLabel(c: number): string {
+  if (c >= 70) return 'Strong match'
+  if (c >= 45) return 'Good match'
+  return 'Close call'
+}
+
 export default function ResultsCard({
   brand, mixer, rationale, onRetake, alts, confidence, onReroll
 }: {
@@ -40,29 +46,39 @@ export default function ResultsCard({
   const [copied, setCopied] = useState(false)
 
   return (
-    <div className="rounded-2xl overflow-hidden shadow-lg">
+    <div className="rounded-2xl overflow-hidden shadow-lg results-enter">
       {/* ── Hero ── */}
       <div className={`${grad} px-5 pt-8 pb-6 flex flex-col items-center text-center gap-3`}>
         {brand?.category && (
           <span className="category-pill self-end -mt-4">{catLabel[brand.category] ?? brand.category}</span>
         )}
 
+        {brand && (
+          <span className="text-xs font-bold tracking-widest uppercase bg-white/15 backdrop-blur-sm border border-white/30 px-3 py-1 rounded-full">
+            {confidenceLabel(confidence)}
+          </span>
+        )}
+
         {brand
           ? <ConvinceMe key={brand.id} brand={brand} />
-          : <BrandLogo name="" size={110} className="logo-chip shadow-2xl" />
+          : <BrandLogo name="" size={120} className="logo-chip shadow-2xl" />
         }
 
         <div>
-          <h2 className="text-3xl font-extrabold drop-shadow-sm">{brand?.displayName || 'No Match Found'}</h2>
+          <h2 className="text-4xl font-extrabold drop-shadow-sm leading-tight">{brand?.displayName || 'No Match Found'}</h2>
           <p className="text-white/85 text-sm mt-1 max-w-xs mx-auto">{rationale}</p>
         </div>
       </div>
 
       {/* ── Details ── */}
       <div className="card !rounded-t-none space-y-4">
-        <div className="bg-white/5 rounded-xl p-4">
-          <p className="text-sm text-white/60">Mixer</p>
-          <p className="text-lg font-semibold">{mixer}</p>
+        {/* Your drink — full-serve hero line */}
+        <div className="bg-white/6 rounded-xl px-4 py-3 flex items-center justify-between">
+          <div>
+            <p className="text-xs text-white/50 uppercase tracking-widest mb-1">Your drink</p>
+            <p className="text-xl font-bold">{brand?.displayName ?? '—'} + {mixer}</p>
+          </div>
+          <span className="text-3xl">🥃</span>
         </div>
 
         {brand && <DrinkRecipe brand={brand} mixer={mixer} />}
@@ -91,7 +107,7 @@ export default function ResultsCard({
         <div className="flex gap-3">
           <button className="btn btn-primary" onClick={onRetake}>Retake</button>
           <button className="btn flex-1" onClick={onReroll}>
-            Not feeling it →
+            Try another →
           </button>
           <button
             className="btn"

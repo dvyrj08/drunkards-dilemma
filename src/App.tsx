@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useMemo, useState, useRef, useEffect } from 'react'
 import Dither from './components/Dither'
 import ProgressBar from './components/ProgressBar'
 import StepCard from './components/StepCard'
@@ -21,13 +21,15 @@ const steps = [
 ] as const
 
 type StepKey = typeof steps[number]['key']
-type Phase = 'quiz' | 'results' | 'directory'
+type Phase = 'quiz' | 'thinking' | 'results' | 'directory'
 
 export default function App() {
   const [phase, setPhase]       = useState<Phase>('quiz')
   const [step, setStep]         = useState(0)
   const [answers, setAnswers]   = useState<Answers>({})
   const [resultIndex, setResultIndex] = useState(0)
+  const [advancing, setAdvancing] = useState(false)
+  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const total   = steps.length
   const current = steps[step]
@@ -35,9 +37,42 @@ export default function App() {
   const setAnswer = (key: StepKey, value?: string) =>
     setAnswers(prev => ({ ...prev, [key]: value }))
 
+  const clearAdvanceTimer = () => {
+    if (advanceTimer.current) {
+      clearTimeout(advanceTimer.current)
+      advanceTimer.current = null
+    }
+  }
+
+  const goNext = (fromStep: number) => {
+    if (fromStep >= total - 1) setPhase('thinking')
+    else setStep(fromStep + 1)
+  }
+
+  // Fix 2: thinking interstitial → results after 1800ms
+  useEffect(() => {
+    if (phase === 'thinking') {
+      const t = setTimeout(() => setPhase('results'), 1800)
+      return () => clearTimeout(t)
+    }
+  }, [phase])
+
+  // Fix 1: auto-advance after chip selection
+  const handleAnswer = (key: StepKey, value: string) => {
+    setAnswer(key, value)
+    setAdvancing(true)
+    clearAdvanceTimer()
+    const capturedStep = step
+    advanceTimer.current = setTimeout(() => {
+      setAdvancing(false)
+      goNext(capturedStep)
+    }, 400)
+  }
+
   const advance = () => {
-    if (step >= total - 1) setPhase('results')
-    else setStep(s => s + 1)
+    clearAdvanceTimer()
+    setAdvancing(false)
+    goNext(step)
   }
 
   const skip = () => {
@@ -51,6 +86,8 @@ export default function App() {
   }
 
   const retake = () => {
+    clearAdvanceTimer()
+    setAdvancing(false)
     setAnswers({})
     setStep(0)
     setPhase('quiz')
@@ -117,16 +154,17 @@ export default function App() {
               title={current.title}
               options={current.options as string[]}
               value={(answers as Record<string, string | undefined>)[current.key]}
-              onChange={v => setAnswer(current.key, v)}
+              onChange={v => handleAnswer(current.key, v)}
               onRandomize={randomize}
               onSkip={skip}
+              advancing={advancing}
             />
           </div>
           <div className="flex gap-3 items-center">
             {step > 0 && (
               <button
                 className="btn text-sm text-white bg-black/40 backdrop-blur-sm border border-white/20 hover:bg-black/60 transition-colors"
-                onClick={() => setStep(s => s - 1)}
+                onClick={() => { clearAdvanceTimer(); setAdvancing(false); setStep(s => s - 1) }}
               >
                 ← Back
               </button>
@@ -136,6 +174,14 @@ export default function App() {
             </button>
           </div>
         </>
+      ) : phase === 'thinking' ? (
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-4 bg-black/90 backdrop-blur-sm">
+          <div className="thinking-pulse">🍸</div>
+          <div className="text-sm font-semibold text-white/80 tracking-wide">
+            Finding your drink<span className="think-dots"><span>.</span><span>.</span><span>.</span></span>
+          </div>
+          <div className="text-xs text-white/30">Matching your answers to 80+ brands</div>
+        </div>
       ) : (
         <ResultsCard
           brand={winner}

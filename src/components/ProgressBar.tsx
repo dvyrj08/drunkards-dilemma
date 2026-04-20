@@ -30,7 +30,7 @@ export default function ProgressBar({ step, total }: { step: number; total: numb
       >
         <div
           className="h-full rounded-full transition-all duration-500 ease-out"
-          style={{ width: `${pct}%`, background: 'linear-gradient(90deg, rgba(255,255,255,0.9), rgba(255,255,255,0.6))' }}
+          style={{ width: `${pct}%`, background: 'linear-gradient(90deg, rgba(220,36,36,0.9), rgba(220,36,36,0.55))' }}
         />
       </div>
     </div>

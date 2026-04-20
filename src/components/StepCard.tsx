@@ -7,7 +7,8 @@ export default function StepCard({
   value,
   onChange,
   onRandomize,
-  onSkip
+  onSkip,
+  advancing,
 }: {
   title: string
   options: string[]
@@ -15,6 +16,7 @@ export default function StepCard({
   onChange: (v: string) => void
   onRandomize: () => void
   onSkip: () => void
+  advancing?: boolean
 }) {
   return (
     <div className="card space-y-5">
@@ -41,6 +43,7 @@ export default function StepCard({
             key={opt}
             label={opt}
             selected={value === opt}
+            dimmed={advancing && value !== opt}
             onClick={() => onChange(opt)}
           />
         ))}

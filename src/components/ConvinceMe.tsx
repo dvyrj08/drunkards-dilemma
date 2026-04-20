@@ -25,7 +25,7 @@ export default function ConvinceMe({ brand }: { brand: Brand }) {
         aria-label={open ? 'Hide details' : 'Tap for details'}
         className="hover:opacity-80 transition-opacity relative"
       >
-        <BrandLogo {...lp} name={brand.displayName} size={110} className="logo-chip shadow-2xl" />
+        <BrandLogo {...lp} name={brand.displayName} size={120} className="logo-chip shadow-2xl" />
         <span className="absolute -bottom-1 -right-1 text-xs bg-white/10 rounded-full px-1.5 py-0.5 text-white/50">
           {open ? '▲' : 'ℹ'}
         </span>
