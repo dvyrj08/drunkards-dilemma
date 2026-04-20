@@ -143,7 +143,7 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
         <p className="text-xs text-white/70 uppercase tracking-widest mb-2">Category</p>
         <div className="flex flex-wrap gap-2">
           <button
-            className={`chip text-sm ${filterCat === 'all' ? 'bg-white/25' : ''}`}
+            className={`chip text-sm ${filterCat === 'all' ? 'chip-selected' : ''}`}
             onClick={() => setFilterCat('all')}
           >
             All
@@ -151,7 +151,7 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
           {allCategories.map(cat => (
             <button
               key={cat}
-              className={`chip text-sm capitalize ${filterCat === cat ? 'bg-white/25' : ''}`}
+              className={`chip text-sm capitalize ${filterCat === cat ? 'chip-selected' : ''}`}
               onClick={() => setFilterCat(cat)}
             >
               {catLabel[cat as Brand['category']] ?? cat}
@@ -166,7 +166,7 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
           <p className="text-xs text-white/70 uppercase tracking-widest mb-2">Price</p>
           <div className="flex flex-wrap gap-2">
             <button
-              className={`chip text-sm ${filterPrice === 'all' ? 'bg-white/25' : ''}`}
+              className={`chip text-sm ${filterPrice === 'all' ? 'chip-selected' : ''}`}
               onClick={() => setFilterPrice('all')}
             >
               All
@@ -174,7 +174,7 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
             {priceTierOrder.map(tier => (
               <button
                 key={tier}
-                className={`chip text-sm capitalize ${filterPrice === tier ? 'bg-white/25' : ''}`}
+                className={`chip text-sm capitalize ${filterPrice === tier ? 'chip-selected' : ''}`}
                 onClick={() => setFilterPrice(tier)}
               >
                 {tier}
@@ -186,7 +186,7 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
           <p className="text-xs text-white/70 uppercase tracking-widest mb-2">Strength</p>
           <div className="flex flex-wrap gap-2">
             <button
-              className={`chip text-sm ${filterStrength === 'all' ? 'bg-white/25' : ''}`}
+              className={`chip text-sm ${filterStrength === 'all' ? 'chip-selected' : ''}`}
               onClick={() => setFilterStrength('all')}
             >
               All
@@ -194,7 +194,7 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
             {strengthOrder.map(s => (
               <button
                 key={s}
-                className={`chip text-sm capitalize ${filterStrength === s ? 'bg-white/25' : ''}`}
+                className={`chip text-sm capitalize ${filterStrength === s ? 'chip-selected' : ''}`}
                 onClick={() => setFilterStrength(s)}
               >
                 {s}
@@ -215,22 +215,21 @@ export default function DrinkDirectory({ onBack }: { onBack: () => void }) {
             return (
               <button
                 key={brand.id}
-                className="rounded-2xl overflow-hidden text-left hover:scale-[1.02] transition-transform active:scale-[0.98]"
+                className="rounded-2xl overflow-hidden text-left hover:scale-[1.02] transition-transform active:scale-[0.98] bg-black/40 backdrop-blur-sm border border-white/10"
                 onClick={() => setSelected(brand)}
               >
-                <div className="bg-black/40 backdrop-blur-sm px-3 pt-4 pb-3 flex flex-col items-center text-center gap-2">
+                {/* Category color stripe */}
+                <div className={`h-1 w-full ${grad}`} />
+
+                <div className="px-3 pt-3 pb-3 flex flex-col items-center text-center gap-2">
                   <BrandLogo {...lp} name={brand.displayName} size={56} className="logo-chip shadow-lg" />
-                  <p className="text-sm font-bold leading-tight line-clamp-2" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.8)' }}>{brand.displayName}</p>
-                </div>
-                <div className="bg-black/50 backdrop-blur-sm px-3 py-2 space-y-1">
-                  <span className="text-xs text-white/75 capitalize">
-                    {catLabel[brand.category] ?? brand.category}
+                  <p className="text-sm font-bold leading-tight line-clamp-2" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.8)' }}>
+                    {brand.displayName}
+                  </p>
+                  <span className="text-xs text-white/50 capitalize">
+                    {catLabel[brand.category] ?? brand.category} · {brand.priceTier}
                   </span>
-                  <div className="flex items-center justify-between text-xs text-white/80">
-                    <span>{brand.abv}% ABV</span>
-                    <span className="capitalize">{brand.priceTier}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
+                  <div className="flex items-center gap-1 w-full">
                     {['light', 'medium', 'strong'].map(s => (
                       <span
                         key={s}
