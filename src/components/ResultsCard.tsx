@@ -73,12 +73,9 @@ export default function ResultsCard({
       {/* ── Details ── */}
       <div className="card !rounded-t-none space-y-4">
         {/* Your drink — full-serve hero line */}
-        <div className="bg-white/6 rounded-xl px-4 py-3 flex items-center justify-between">
-          <div>
-            <p className="text-xs text-white/50 uppercase tracking-widest mb-1">Your drink</p>
-            <p className="text-xl font-bold">{brand?.displayName ?? '—'} + {mixer}</p>
-          </div>
-          <span className="text-3xl">🥃</span>
+        <div className="bg-white/6 rounded-xl px-4 py-3">
+          <p className="text-xs text-white/50 uppercase tracking-widest mb-1">Your drink</p>
+          <p className="text-xl font-bold">{brand?.displayName ?? '—'} + {mixer}</p>
         </div>
 
         {brand && <DrinkRecipe brand={brand} mixer={mixer} />}
