@@ -17,8 +17,7 @@ Open http://localhost:5173
 - Results screen with brand logo, rationale, mixer, and two alternates
 - Accessible, keyboard/touch friendly, and responsive
 
-## AI Mode (optional, off by default)
-The scorer is deterministic. If you want AI to enhance the rationale/selection, add an API route and set an env flag. (Stub left for future work.)
+
 
 ## Logos
 Logos are referenced via `/public/logos/*.svg`. For now, a `placeholder.svg` is used as a fallback. Replace with accurate brand logos that you have the rights to use.
